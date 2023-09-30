@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.83278668.css",
+    "main.js": "/static/js/main.f822b55a.js",
+    "static/media/enhance.jpg": "/static/media/enhance.8b28bbcabaf89357c949.jpg",
+    "static/media/telantsupport.png": "/static/media/telantsupport.e9523ae1cb3eb5379dd4.png",
+    "static/media/parvarish.png": "/static/media/parvarish.4625be1e1b66d32f0bc0.png",
+    "static/media/intershipprogram.jpg": "/static/media/intershipprogram.9c98ff5b9a080c14b19b.jpg",
+    "static/media/parvarish1.png": "/static/media/parvarish1.9682f14754e2eb29f879.png",
+    "static/media/logo.png": "/static/media/logo.d244b01e7e845bf7b20a.png",
+    "static/media/knowledgecenter.png": "/static/media/knowledgecenter.585ba123de4868a4c876.png",
+    "static/media/academicpartnership.png": "/static/media/academicpartnership.c7b44761ade070c0d73d.png",
+    "static/media/playstore.png": "/static/media/playstore.6290078d826c891e3518.png",
+    "static/media/capacitybuilding.png": "/static/media/capacitybuilding.ad7a039dfc8cd55e30ae.png",
+    "static/media/parvarish2.png": "/static/media/parvarish2.7ae761e75d3dde047279.png",
+    "static/media/technical.png": "/static/media/technical.606e4997fb29e44bc8a9.png",
+    "static/media/logof.png": "/static/media/logof.f1c7b0f6696db9736874.png",
+    "index.html": "/index.html",
+    "main.83278668.css.map": "/static/css/main.83278668.css.map",
+    "main.f822b55a.js.map": "/static/js/main.f822b55a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.83278668.css",
+    "static/js/main.f822b55a.js"
+  ]
+}

@@ -1,0 +1,83 @@
+.container{
+    margin: 0;
+    padding: 0;
+
+} 
+.py-5{
+    background-color: black;
+    color: white;
+    width: 100vw;
+}
+
+.col-2{
+    margin-left: 10%;
+}
+
+.col-3{
+    margin-left: 0;
+} 
+
+.d-flex p{
+margin-left: 5%;
+}
+
+.d-flex ul{
+    margin-right: 5%;
+}
+
+@media (min-width: 320px)
+and (max-width:480px){
+.col-2 {
+    margin-left: 5%;
+}
+.col-2 img{
+    height: 40px;
+    width: 80px;
+
+}
+.col-3{
+    margin-left:40px;
+}
+}
+
+@media (min-width: 480px)
+    and (max-width:768px) {
+.col-2 {
+    margin-left: 5%;
+}
+.col-2 img{
+    height: 40px;
+    width: 80px;
+
+}
+.col-3{
+    margin-left:40px;
+}
+}
+
+@media (min-width: 768px)
+and (max-width:1024px){
+.py-5{
+    width: 100vw;
+}
+.col-2 img{
+    height: 60px;
+    width: 100px;
+}
+.col-3{
+    margin-left:35px;
+}
+}
+@media (min-width: 750px)
+and (max-width:950px){
+.py-5{
+    width: 100vw;
+}
+.col-2 img{
+    height: 60px;
+    width: 100px;
+}
+.col-3{
+    margin-left:35px;
+}
+}
