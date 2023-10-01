@@ -61,16 +61,15 @@ const Navbar = () => {
             Centers
           </a>
           <ul className="dropdown-menu dropdowncustom" aria-labelledby="navbarDropdownMenuLink">
-            <li><a className="dropdown-item" href="#">Delhi</a></li>
-            <li><a className="dropdown-item" href="#">Merrut</a></li>
-            <li><a className="dropdown-item" href="#">Gaziabad</a></li>
-            <li><a className="dropdown-item" href="#">Shamli</a></li>
-            <li><a className="dropdown-item" href="#">Baghpat</a></li>
-            <li><a className="dropdown-item" href="#">Mujaffar Nagar</a></li>
-            <li><a className="dropdown-item" href="#">Sharanpur</a></li>
-            <li><a className="dropdown-item" href="#">Panipat</a></li>
-            <li><a className="dropdown-item" href="#">Sonipat</a></li>
-            <li><a className="dropdown-item" href="#">Karnal</a></li>
+          <li><NavLink className="dropdown-item" to="/bisauli">Bisauli</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/bilsi">Bilsi</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/babrala">Babrala</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/ughaiti">Ughaiti</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/islamnagar">Islamnagar</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/behjoi">Behjoi</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/chandausi">Chandausi</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/ujhani">Ujhani</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/gawan">Gawan</NavLink></li>
           </ul>
         </li>
         <li className="nav-item dropdown">
@@ -78,16 +77,17 @@ const Navbar = () => {
            Exams
           </a>
           <ul className="dropdown-menu dropdowncustom" aria-labelledby="navbarDropdownMenuLink">
-            <li><a className="dropdown-item" href="#">UPSC</a></li>
-            <li><a className="dropdown-item" href="#">SSC</a></li>
-            <li><a className="dropdown-item" href="#">CTET</a></li>
-            <li><a className="dropdown-item" href="#">KVS</a></li>
-            <li><a className="dropdown-item" href="#">Banking</a></li>
-            <li><a className="dropdown-item" href="#">NDA/NA</a></li>
-            <li><a className="dropdown-item" href="#">Railways</a></li>
-            <li><a className="dropdown-item" href="#">Sainik School</a></li>
-            <li><a className="dropdown-item" href="#">DSSSB</a></li>
-            <li><a className="dropdown-item" href="#">ILETS</a></li>
+            <li><NavLink className="dropdown-item" to="/upsc">UPSC</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/ssc">SSC</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/ctet">CTET</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/banking">BANKING</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/railways">RAILWAYS</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/ndacds">NDA/CDS</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/navodaya">NAVODAYA ENTRANCE</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/sainik">SAINIK SCHOOL</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/english">ENGLISH SPEAKING</NavLink></li>
+            <li><NavLink className="dropdown-item" to="/computer">COMPUTER COURSE</NavLink></li>
+            
           </ul>
         </li>
         <li className="nav-item dropdown">
