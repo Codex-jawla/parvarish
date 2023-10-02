@@ -1,0 +1,14 @@
+.heading{
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.heading h2{
+    font-size: 76;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(63, 61, 61);
+
+}
