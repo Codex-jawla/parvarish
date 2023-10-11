@@ -1,0 +1,1492 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+#root{
+    width: 100vw;
+    overflow-x: hidden;
+}
+.navbar-brand img{
+    width: 15vw;
+    height: 10vh;
+}
+.navbar-nav{
+    margin-right: 5vw;
+    font-size: 20px;
+}
+.navbar-nav li{
+    padding-right: 1rem;
+}
+.dropdown-menu:hover{
+    display: block;
+}
+.navbar-nav a:hover{
+    color: blue;
+}
+
+.imginfo{
+    width: 100vw;
+    height: 52vh;
+}
+.slide{
+    position: relative;
+}
+
+.maindata{
+    display: flex;
+    width: 88vw;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    align-items: center;
+}
+.div{
+    background-color: rgb(222, 222, 222);
+}
+.headingMainData{
+color: black;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+text-align: center;
+line-height: 50px; 
+}
+
+.headingMainData h2{
+    font-size: 56px;
+
+}
+.dataMainData{
+color: #515354;
+font-family: Open Sans;
+
+}
+.dataMainData p{
+margin-top: 15px;
+font-size: 43px;
+line-height: 55px; 
+font-weight: 500;
+text-align: justify;
+margin-bottom: 5%;
+}
+
+.btnMainData{
+display: inline;
+gap: 8px;
+border-radius: 50px;
+border: 2px solid black;
+background: transparent;
+width: 190px;
+}
+
+.a{
+color:#14242C;
+font-weight: 500;
+}
+.btnMainData :hover{
+    border: 2px solid black;
+    background: black;
+    color:  white;
+    border-radius: 50px;
+}
+.leftorange{
+    width: 10px;
+    background-color: orange;
+    height: 573px;
+    flex-shrink: 0;
+    justify-content: left;
+}
+.rightorange{
+    width: 10px;
+    height: 573px;
+    flex-shrink: 0;
+    background-color: orange;
+    justify-content: right;
+}
+.data{
+    display: flex;
+    margin-top: 35px;
+    
+}
+h1{
+    background-color: #0A2640;
+}
+.maindiv{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 70px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.navigate{
+    position: relative;
+    color: black;
+    display: flex;
+    justify-content: right ;
+}
+.lefright{
+    display: flex;
+    justify-content: right ;
+    margin-right: 2rem;
+}
+.navigate button{
+    font-size: 30px;
+    padding: 10px;
+    background: transparent;
+    border: none;
+}
+
+.newsHeading h2{
+color: black;
+font-family: Montserrat;
+font-size: 54px;
+font-style: normal;
+font-weight: 600;
+line-height: 50px;
+}
+
+.newsbox{
+    width: 90vw;
+    height: 80vh;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+}
+.newsbox1{
+width: 39vw;
+height: 25vh;
+flex-shrink: 0;
+background: #F3851D;
+box-shadow: 5px 5px black;
+}
+
+.topic{
+    display: flex;
+    width: 39vw;
+    height: 16vh;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.btnnewsData{
+border: 2px solid #FFF;
+background: #FEFEFE;
+display: block;
+gap: 8px;
+border-radius: 5px;
+width: 180px;
+margin-left: 35%;
+}
+
+.btnnewsData a{
+    color: #14242C;
+}
+.btnnewsData:hover{
+border: 2px solid #14242C;
+background: #14242C;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.navigate{
+    margin-right: 18%;
+}
+
+
+
+/* Articles and Blogs */
+.blogarticle{
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #14242C;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.articles{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 75vh;
+    
+}
+.headingarticle{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+}
+.headingarticle h2{
+    font-size: 3rem;
+}
+.imgarticle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.imgarticle img{
+    width: 35vw;
+    height: 45vh;
+    }
+
+.blogbutton{
+    margin-top: -35px;
+    margin-bottom: 5px
+}
+
+.imgarticle button{
+    width: 40px;
+    border-radius: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: #515354;
+    font-weight: 800;
+    color: white;
+    
+}
+.topicarticle{
+    width: 25vw;
+    height: 18vh;
+    background-color: #3B4858;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.topicarticle p{
+    font-size: 20px;
+    color:white;
+}
+
+.topicarticle a{
+    border: 2px solid #FFF;
+    background: #FEFEFE;
+    display: block;
+    gap: 8px;
+    border-radius: 5px;
+    width: 130px;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}
+.topicarticle a:hover{
+    background: rgb(0, 0, 0);
+    border: 2px solid black;
+    color: white;
+
+}
+
+.blogs{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 75vh;   
+}
+
+.pHeading{
+    color: #000000;
+    font-family: Montserrat;
+   
+}
+
+.pHeading h2{
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 5px black;
+}
+.pbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.pbox img{
+    width: 30vw;
+    height: 25vh;
+}
+.imgp{
+    width: 30vw;
+    height: 25vh;
+}
+.imgp img{
+    border-radius: 15% 15% 0 0;
+}
+.Ptopic{
+    color: #212529cc;
+    font-size: 30px;
+    font-family: Montessarat;
+    font-weight: 600;
+    text-decoration: underline;
+    width: 29vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Particle{
+    color: #14242C;
+    font-family: Montessarat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.75px;
+    text-align: justify;
+    width: 27vw;
+    margin-bottom: 10px;
+}
+.pbox1{
+    background: white;
+    border-radius: 15% 15% 10% 10%;
+    width:30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 57vh;
+    margin-right: 40px;
+}
+.btnpData{
+    display: flex;
+    justify-content: center;
+}
+.btnpData a{
+    border: 2px solid #000000;
+    background: #000000;
+    display: block;
+    gap: 8px;
+    border-radius: 5px;
+    width: 100px;
+    font-size: 12px;
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    margin-bottom: 10px;
+    position: absolute;
+  bottom: 0px;
+  
+
+}
+
+.btnpData a:hover{
+    border: 2px solid #010835a9;
+    background: #010835a9;
+    color: rgb(255, 255, 255);
+}
+.pmaindiv{
+    background-color: #F3851D;
+    padding: 2rem;
+}
+.navigatediv{
+    background-color: #F3851D;
+}
+
+.installappbox{
+    background-color: #F3851D;
+}
+.ourcontact{
+    background-color: #0A2640;
+}
+.maindivc{
+    display: flex;
+    background-color: #0A2640;
+    width: 100vw;
+    flex-direction: column;
+    color: white;
+    margin-top: 70px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.contactbox{
+    width: 100vw;
+    height: 40vh;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+}
+.contactbox1{
+width: 35vw;
+height: 15vh;
+flex-shrink: 0;
+background-color: #0A2640;
+}
+
+.ctopic{
+    display: flex;
+    width: 509px;
+    height: 110px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+    /*  enhancements */
+    .enhanceheading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 34px;
+    }
+    
+    .enhanceheading h2{
+        color: #000000;
+        font-family: Montserrat;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 800;
+    }
+    .enhanceheading p{
+        font-size: 18px;
+        color: #0A2640;
+        font-weight: 500;
+    }
+    .enhanceimgtxt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 80vh;
+
+    }
+    .enhanceimg img{
+        width: 40vw;
+        height: 75vh;
+    }
+    .enhancetxt{
+        margin-left: 45px;
+    }
+    .enhancetxt ol{
+        width: 30vw;
+    }
+    .enhancetxt li{
+        font-size: 30px;
+        color: #0A2640;
+        font-weight: 500;
+    }
+    .enhancetxt  p{
+        font-size: 25px;
+    }
+    .installappbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    }
+    .installapp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .appheading h2{
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 800;
+        text-shadow: 2px 4px black;
+    }
+    .appcards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 85px;
+    }
+    .appcard1{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 35vw;
+    border-radius: 50px;
+    height: 44vh;
+    margin-right: 80px;
+    box-shadow: 10px 10px black;
+    }
+    .appcard1 img{
+        width: 350px;
+    height: 200px;
+    margin-top: -100px;
+    }
+    .appcard1 a{
+        height: 13vh;
+    }
+    .appcard1 h3{
+        color: #0A2640;
+        font-family: Montserrat;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .appcard1 ul{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 20px;
+        line-height: 20px; 
+        letter-spacing: 0.1px;
+        text-align: left;
+        width: 35vw;
+    }
+    .appcard2{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 35vw;
+    border-radius: 50px;
+    margin-left: 40px;
+    height: 44vh;
+    box-shadow: 10px 10px black;
+    }
+        .appcard2 img{
+            width: 180px;
+            height: 130px;
+            margin-top: -39px;
+        }
+        .appcard2 h3{
+            color: #0A2640;
+            font-family: Montserrat;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 500;
+        }
+        .appcard2 a{
+            height: 13vh;
+        }
+        .appcard2 ul{
+            color: #000;
+            font-family: Montserrat;
+            font-size: 20px;
+            line-height: 20px; 
+            letter-spacing: 0.1px;
+            text-align: left;
+            width: 35vw;
+        }
+
+        .maindivc{
+            margin-top: 0px;
+            background-color: #14242C;
+        }
+        .contactHeading h1{
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 800;
+            background-color: #14242C;
+            text-transform: uppercase;
+        }
+        .ctopic{
+            line-height: 25px;
+            text-align: left;
+            font-weight: 200;
+        }
+        .contactbox1{ 
+            background-color:#14242C ;
+        }
+        .ctopic h3{
+            font-size: 25px;
+        }
+        .ctopic p{
+            font-size: 20px;
+        }
+        .ourcontact{
+            display: flex;
+            justify-content: center;
+        }
+        .contactHeading{
+            margin-top: 20px;
+        }
+
+        @media (min-width: 320px)
+        and (max-width:480px){
+            #root{
+                overflow-x: hidden;
+            }
+            .imginfo{
+                width:100vw;
+                height: 42vh;
+            }
+            .headingMainData h2{
+                font-size: 35px;
+            }
+            .newsHeading h2{
+                font-size: 25px;
+            }
+            .newsbox{
+                margin-left: 39%;
+                margin-right: 41%;
+                width: 100vw;
+                height: 75vh;
+                margin-top: 0px;
+            }
+            .newsbox1{
+                width: 95vw;
+                height: 17vh;
+            }
+            .topic{
+                width: 95vw;
+                height: 12vh;
+                font-weight: 300;
+                line-height: 20px;
+                font-size: 13px;
+            }
+            .data{
+                width: 100vw;
+                margin-bottom: 10vh;
+            }
+            .leftorange{
+                width: 4px;
+                height: 350px;
+            }
+            .rightorange{
+                width: 4px;
+                height: 350px;
+            }
+            .dataMainData p{
+                line-height: 25px;
+                font-size: 16px;
+                text-align: justify;
+            }
+            .maindata{
+                margin-top: 0px;
+                margin-left: 4vw;
+                margin-right: 4vw;
+            }
+            .btnMainData{
+                width: 130px;
+            }
+            .btnMainData .a{
+                    font-size: 12px;
+            }
+            .btnnewsData{
+                width:120px;
+                margin-left: 34%;
+            }
+            .btnnewsData a{
+                font-size: 10px;
+            }
+        
+            .imgarticle img{
+            width: 90vw;
+            height: 30vh;
+            }
+            .topicarticle p {
+                font-size: 15px;
+            }
+            .topicarticle{
+                width: 75vw;
+                height: 16vh;
+            }
+            .articles{
+                height: 60vh;
+                width: 75vw;
+            }
+        
+            .blogs{
+                height: 60vh;
+                width: 75vw;
+            }
+            .blogarticle{
+                height: 125vh;
+            }
+            .pHeading h2{
+                font-size: 35px;
+            }
+            .maindiv{
+                margin-top: 0px;
+            }
+            .pmaindiv{
+                display: flex;
+                justify-content: center;
+            }
+            .pbox1{
+                margin-right: 0px;
+                margin-bottom: 20px;
+                width: 85vw;
+                height: 59vh;
+            }
+            .imgp{
+                width: 85vw;
+                height: 25vh;
+            }
+            .pbox img{
+                width: 85vw;
+                height: 25vh;
+            }
+            .Ptopic{
+                font-size: 18px;
+                width: 80vw;
+            }
+            .Particle{
+                font-size: 16px;
+                line-height: 18px;
+                width: 70vw;
+            }
+            .btnpData a{
+                position: relative;
+            }
+    .enhanceheading h2{
+        font-size: 24px;
+    }
+    .enhanceheading p {
+        font-size: 15px;
+    }
+    .enhanceimgtxt{
+        flex-direction: column;
+        height: 95vh;
+        margin-top: 0px;
+    }
+    .enhanceimg img{
+    width: 90vw;
+    height: 40vh;
+    }
+    .enhancetxt{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .enhancetxt li{
+        font-size: 25px;
+    }
+    .enhancetxt p{
+        font-size: 20px;
+    }
+    .enhancetxt ol{
+        width: 92vw;
+    }
+    .appheading h2{
+        font-size: 22px;
+        margin-top: 25px;
+    }
+    .appcards{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .appcard1{
+        width: 80vw;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    .appcard1 a{
+        height: 10vh;
+    }
+    .appcard1 img{
+        width: 253px;
+    height: 173px;
+    margin-top: -89px;
+    }
+    .appcard1 h3{
+        font-size: 25px;
+    }
+    .appcard1 ul{
+        font-size: 12px;
+        width: 70vw;
+        line-height: 15px;
+    }
+    .appcard2{
+        width: 80vw;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .appcard2 a{
+        height: 10vh;
+    }
+    .appcard2 img{
+        width: 134px;
+        height: 109px;
+        margin-top: -33px;
+    }
+    .appcard2 h3{
+        font-size: 25px;
+    }
+    .appcard2 ul{
+        font-size: 12px;
+        width: 70vw;
+        line-height: 15px;
+    }
+    .installappbox{
+        height: 120vh;
+    }
+    .contactHeading h1{
+        font-size: 30px;
+    }
+
+    .contactbox{
+        width: 55vw;
+        height: 50vh;
+        margin-left:-170px ;
+        margin-top: 0px;
+    }
+    .ctopic{
+        line-height: 10px;
+    }
+    .ctopic h3{
+        font-size: 15px;
+    }
+    .ctopic p {
+        font-size: 12px;
+    }
+    .contactbox1{
+        height: 10vh;
+    }
+}
+
+@media (min-width: 480px)
+and (max-width:768px){
+    #root{
+        overflow-x: hidden;
+    }
+.imginfo{
+    width: 100vw;
+}
+.headingMainData h2{
+    font-size: 40px;
+}
+.dataMainData p{
+    font-size: 25px;
+    line-height: 30px;
+    width: 85vw;
+}
+.maindata{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100vw;
+}
+
+.newsHeading h2{
+    font-size: 30px;
+}
+.newsbox{
+    width:100vw;
+    height: 90vh;
+    margin-top: 0px;
+}
+.newsbox1{
+    width: 92vw;
+    height: 21vh;
+}
+.topic{
+    font-size:20px;
+    width: 92vw;
+    height: 14vh;
+}
+.pmaindiv {
+    display: flex;
+    justify-content: center;
+}
+.maindiv{
+    width: 100vw;
+    margin-top: 0px;
+}
+.navigate{
+    justify-content: flex-end;
+    margin-right: -35%;
+}
+
+.btnnewsData{
+    width: 135px;
+}
+.btnnewsData a{
+    font-size: 12px;
+}
+    .imgarticle{
+        width: 70vw;
+    }
+    .imgarticle img{
+        width: 70vw;
+        height: 30vh;
+    }
+    .topicarticle p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .topicarticle{
+        width: 55vw;
+        height: 15vh;
+    }
+    .topicarticle a{
+        margin-bottom: 20px;
+    }
+    .articles{
+        height: 35vh;
+        width: 70vw;
+    }
+    .blogs{
+        height: 35vh;
+        width: 70vw;
+    }
+    .blogarticle{
+        height: 115vh;
+    }
+    .pHeading h2{
+        font-size: 35px;
+    }
+    .pbox1{
+        margin-right: 35px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        width: 75vw;
+        height: 55vh;
+    }
+    .imgp{
+        width: 75vw;
+    }
+    .imgp img{
+        width: 75vw;
+    }
+    .Ptopic{
+        font-size: 18px;
+        width: 75vw;
+    }
+    .Particle{
+        font-size: 15px;
+        line-height: 15px;
+        width: 65vw;
+        margin-bottom: 50px;
+    }
+    .navigate{
+        margin-right: 0px;
+    }
+    .btnpData a{
+        position: relative;
+    }
+
+    .enhanceheading h2{
+        font-size: 35px;
+    }
+    .enhanceheading p {
+         font-size: 18px;
+    }
+    .enhanceimgtxt{
+        flex-direction: column;
+        height: 105vh;
+        margin-top: 10px;
+    }
+    .enhanceimg img{
+        width: 90vw;
+        height: 60vh;
+    }
+    .enhancetxt{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .enhancetxt ol{
+        width: 85vw;
+    }
+    .enhancetxt ol li {
+        font-size: 25px;
+    }
+    .enhancetxt p{
+        font-size: 20px;
+    }
+    .appheading h2{
+        font-size: 30px;
+    }
+    .installappbox{
+        height: 135vh;
+    }
+    .appcards{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .appcard1{
+        width: 80vw;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        height: 53vh;
+    }
+    .appcard1 a{
+        height: 10vh;
+    }
+    .appcard1 img{
+        width: 253px;
+        height: 173px;
+        margin-top: -89px;
+    }
+    .appcard1 h3{
+        font-size: 28px;
+    }
+    .appcard1 ul{
+        font-size: 17px;
+        width: 75vw;
+        line-height: 21px;
+    }
+    .appcard2{
+        width: 80vw;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        height: 53vh;
+        margin-left: 0px;
+    }
+    .appcard2 a{
+        height: 10vh;
+    }
+    .appcard2 img{
+        width: 160px;
+        height: 115px;
+        margin-top: -35px;
+    }
+    .appcard2 h3{
+        font-size: 28px;
+    }
+    .appcard2 ul{
+        font-size: 17px;
+        width: 75vw;
+        line-height: 21px;
+    }
+    .contactHeading h1{
+        font-size: 35px;
+    }
+    .contactbox{
+        width: 100vw;
+        height: 50vh;
+        margin-left:0px;
+        margin-top: 0px;
+    }
+    .ctopic{
+        line-height: 10px;
+    }
+    .ctopic h3{
+        font-size: 20px;
+    }
+    .ctopic p {
+        font-size: 15px;
+    }
+    .contactbox1{
+        height: 10vh;
+        width: 85vw;
+    }
+    
+}
+
+@media (min-width: 768px)
+    and (max-width:1024px){
+        #root{
+            overflow-x: hidden;
+        }
+    .imginfo{
+        width: 100vw;
+        height: 40vh;
+    }
+    .headingMainData h2{
+        font-size: 55px;
+    }
+    .dataMainData p{
+        font-size: 30px;
+        line-height: 37px;
+        width: 90vw;
+    }
+    .maindata{
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 100vw;
+    }
+    
+    .newsHeading h2{
+        font-size: 40px;
+    }
+    .newsbox{
+        width:100vw;
+        height: 95vh;
+        margin-top: 0px;
+    }
+    .newsbox1{
+        width: 90vw;
+        height: 22vh;
+    }
+    .topic{
+        font-size:25px;
+        width: 90vw;
+    }
+    .maindiv{
+        width: 100vw;
+        margin-top: 0px;
+    }
+    .navigate{
+        justify-content: flex-end;
+        margin-right: -35%;
+    }
+    
+    .btnnewsData{
+        width: 135px;
+        margin-left: 41%;
+    }
+    .btnnewsData a{
+        font-size: 12px;
+    }
+        .imgarticle img{
+            width: 40vw;
+            height: 35vh;
+        }
+        .topicarticle p {
+            font-size: 15px;
+        }
+        .topicarticle{
+            width: 30vw;
+            height: 14vh;
+        }
+        .articles{
+            height: 65vh;
+            width: 45vw;
+        }
+        .blogs{
+            height: 65vh;
+            width: 45vw;
+        }
+        .pHeading h2{
+            font-size: 45px;
+        }
+        .pbox1{
+            height: 65vh;
+            margin-bottom: 20px;
+            width: 28vw;
+        }
+        .imgp{
+            width: 28vw;
+            height: 25vh;
+        }
+        .pbox img{
+            width: 28vw;
+            height: 25vh;
+        }
+        .Ptopic{
+            width: 27vw;
+            font-size: 20px;
+        }
+        .Particle{
+            font-size: 15px;
+            width: 25vw;
+        }
+        .btnpData a{
+            bottom: 17px;
+        }
+        .maindiv{
+            margin-top: 20px;
+        }
+        .navigate{
+            margin-right: 210px;
+        }
+        .enhanceimgtxt{
+            flex-direction: column;
+            height: 120vh;
+        }
+        .enhanceheading h2{
+            font-size: 50px;
+        }
+        .enhancetxt{
+            margin-left: 0px;
+            margin-top: 15px;
+        }
+        .enhancetxt ol{
+            width: 80vw;
+        }
+        .enhanceimg img{
+            width: 80vw;
+            height: 75vh;
+        }
+        .enhanceheading p {
+            font-size: 20px;
+       }
+       .appheading h2{
+        font-size: 45px;
+    }
+    .appcard1{
+        width: 40vw;
+        margin-right: 50px;
+        height: 50vh;
+    }
+    .appcard1 ul{
+        font-size: 13px;
+        width: 40vw;
+    }
+    .appcard1 h3{
+        font-size: 30px;
+    }
+    .appcard2{
+        width: 40vw;
+        height: 50vh;
+    }
+    .appcard2 ul{
+        font-size: 13px;
+        width: 40vw;
+    }
+    .appcard2 h3{
+        font-size: 30px;
+    }
+    .contactHeading h1{
+        font-size: 35px;
+    }
+    .contactbox{
+        width: 100vw;
+        height: 50vh;
+        margin-top: 0px;
+    }
+    .ctopic{
+        line-height: 10px;
+        width: 40vw;
+    }
+    .ctopic h3{
+        font-size: 20px;
+    }
+    .ctopic p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .contactbox1{
+        height: 10vh;
+        width: 35vw;
+    }
+    }
+    @media (min-width: 1024px)
+    and (max-width:1200px){
+        #root{
+            overflow-x: hidden;
+        }
+        .imginfo{
+            height: 55vh;
+        }  
+         .maindata{
+            margin-bottom: 15vh;
+         }
+        .maindiv{
+            margin-top: 0px;
+        }
+        .newsbox{
+            width: 100vw;
+            margin-top: 0px;
+        }
+        .newsbox1{
+            width: 48vw;
+        }
+        .topic{
+            width: 48vw;
+            font-size: 25px;
+        }
+        .blogarticle{
+            height: 80vh;
+        }
+        .articles{
+            width: 50vw;
+        }
+        .blogs{
+            width: 50vw;
+        }
+        .imgarticle img{
+            width: 45vw;
+            height: 45vh;
+        }
+        .pbox1{
+            margin-right: 40px;
+            width: 29vw;
+            height: 65vh;
+        }
+        .imgp{
+            width: 29vw;
+        }
+        .imgp img{
+            width: 29vw;
+        }
+        .Ptopic{
+            width: 28vw;
+            font-size: 22px;
+        }
+        .Particle{
+            width: 25vw;
+        }
+        .enhanceheading p{
+            font-size: 22px;
+        }
+        .enhanceimg img{
+            width: 60vw;
+        }
+        .appcard1{
+            width: 45vw;
+            height: 55vh;
+            margin-right: 20px;
+        }
+        .appcard2{
+            width: 45vw;
+            height: 55vh;
+        }
+        .appcard1 ul{
+            width: 45vw;
+        }
+        .appcard2 ul{
+            width: 45vw;
+        }
+    }
+
+    @media (min-width: 1200px)
+    and (max-width:1400px){
+        #root{
+            overflow-x: hidden;
+        }
+        .maindiv{
+            margin-top: 0px;
+        }
+        .maindata{
+            margin-bottom: 15vh;
+        }
+        .newsbox{
+            margin-top: 0px;
+            width: 98vw;
+        }
+        .newsbox1{
+            width: 48vw;
+        }
+        .topic{
+            width: 48vw;
+        }
+        .blogarticle{
+            height: 80vh;
+        }
+        .articles{
+            width: 45vw;
+        }
+        .blogs{
+            width: 45vw;
+        }
+        .imgarticle img{
+            width: 40vw;
+        }
+        .pbox1{
+            margin-right: 30px;
+            width: 30vw;
+            height: 68vh;
+        }
+        .imgp{
+            width: 30vw;
+        }
+        .imgp img{
+            width: 30vw;
+        }
+        .Ptopic{
+            width: 30vw;
+            font-size: 28px;
+        }
+        .Particle{
+            width: 28vw;
+        }
+        .enhanceheading p {
+            font-size: 22px;
+        }
+        .enhanceimg img{
+            width: 60vw;
+        }
+        .appcard1{
+            width: 45vw;
+            margin-right: 20px;
+            height: 55vh;
+        }
+        .installappbox{
+            height: 90vh;
+        }
+        .appcard2{
+            width: 45vw;
+            height: 55vh;
+        }
+        .appcard1 ul{
+            width: 45vw;
+        }
+        .appcard2 ul{
+            width: 45vw;
+        }
+    }
+    @media (min-width: 1400px)
+    and (max-width:1600px){
+        #root{
+            overflow-x: hidden;
+        }
+        .maindata{
+            margin-bottom: 15vh;
+        }
+        .newsbox{
+            width: 98vw;
+        }
+        .newsbox1{
+            width: 47vw;
+        }
+        .topic{
+            width: 47vw;
+        }
+        .articles{
+            width: 45vw;
+        }
+        .blogs{
+            width: 45vw;
+        }
+        .imgarticle img{
+            width: 40vw;
+        }
+        .pbox1{
+            width: 30vw;
+            height: 60vh;
+        }
+        .imgp{
+            width: 30vw;
+        }
+        .imgp img{
+            width: 30vw;
+        }
+        .Ptopic{
+            width: 29vw;
+        }
+        .Particle{
+            width: 26vw;
+        }
+        .appcard1{
+            height: 50vh;
+        }
+        .appcard2{
+            height: 50vh;
+        }
+
+    }
