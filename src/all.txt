@@ -1,0 +1,3896 @@
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+);
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+import './App.css';
+import Home from './component/home/Home';
+import Navbar from './component/nav/Navbar'
+import Footer from './component/footer/Footer';
+import Gallery from './component/gallery/Gallery';
+import Overview from './component/aboutUs/Overview';
+import Overviewo from './component/ourwork/Overviewo';
+import Education from './component/ourwork/Education';
+import Health from './component/ourwork/Health';
+import Agriculture from './component/ourwork/Agriculture';
+import Objective  from './component/aboutUs/Objective';
+import Vission from './component/aboutUs/Vission';
+import Mission from './component/aboutUs/Mission';
+import Bisauli from './component/cities/Bisauli';
+import Bilsi from './component/cities/Bilsi';
+import Babrala from './component/cities/Babrala';
+import Ughaiti from './component/cities/Ughaiti';
+import Islamnagar from './component/cities/Islamnagar';
+import Behjoi from './component/cities/Behjoi';
+import Chandausi from './component/cities/Chandausi';
+import Ujhani from './component/cities/Ujhani';
+import Gawan from './component/cities/Gawan';
+import Upsc from './component/exams/Upsc'
+import Ssc from './component/exams/Ssc'
+import Ctet from './component/exams/Ctet'
+import Nda from './component/exams/Nda'
+import Banking from './component/exams/Banking'
+import Railways from './component/exams/Railways'
+import NavodayaEntrance from './component/exams/NavodayaEntrance'
+import Sanik from './component/exams/Sanik'
+import Englishspeaking from './component/exams/Englishspeaking'
+import Computer from './component/exams/Computer'
+import News1 from './component/homelinks/newslinks/News1';
+import News2 from './component/homelinks/newslinks/News2';
+import News3 from './component/homelinks/newslinks/News3';
+import News4 from './component/homelinks/newslinks/News4';
+import News5 from './component/homelinks/newslinks/News5';
+import News6 from './component/homelinks/newslinks/News6';
+import News7 from './component/homelinks/newslinks/News7';
+import News8 from './component/homelinks/newslinks/News8';
+import Article1 from './component/homelinks/articleblog/Article1';
+import Article2 from './component/homelinks/articleblog/Article2';
+import Article3 from './component/homelinks/articleblog/Article3';
+import Article4 from './component/homelinks/articleblog/Article4';
+import P1 from './component/homelinks/Programlinks/P1';
+import P2 from './component/homelinks/Programlinks/P2';
+import P3 from './component/homelinks/Programlinks/P3';
+import P4 from './component/homelinks/Programlinks/P4';
+import P5 from './component/homelinks/Programlinks/P5';
+import P6 from './component/homelinks/Programlinks/P6';
+import {Route,Routes} from "react-router-dom"
+import React from 'react'
+
+const App = () => {
+  return (<>
+    <Navbar/>
+  <Routes>
+    <Route path="/" Component={Home}/>
+    <Route path="/gallery" Component={Gallery}/>
+    <Route path="/overviewa" Component={Overview}/>
+    <Route path="/objective" Component={Objective}/>
+    <Route path="/vision" Component={Vission}/>
+    <Route path="/mission" Component={Mission}/>
+    <Route path="/bisauli" Component={Bisauli}/>
+    <Route path="/bilsi" Component={Bilsi}/>
+    <Route path="/babrala" Component={Babrala}/>
+    <Route path="/ughaiti" Component={Ughaiti}/>
+    <Route path="/islamnagar" Component={Islamnagar}/>
+    <Route path="/behjoi" Component={Behjoi}/>
+    <Route path="/chandausi" Component={Chandausi}/>
+    <Route path="/ujhani" Component={Ujhani}/>
+    <Route path="/gawan" Component={Gawan}/>
+    <Route path="/upsc" Component={Upsc}/>
+    <Route path="/ssc" Component={Ssc}/>
+    <Route path="/ctet" Component={Ctet}/>
+    <Route path="/banking" Component={Banking}/>
+    <Route path="/railways" Component={Railways}/>
+    <Route path="/ndacds" Component={Nda}/>
+    <Route path="/navodaya" Component={NavodayaEntrance}/>
+    <Route path="/sainik" Component={Sanik}/>
+    <Route path="/english" Component={Englishspeaking}/>
+    <Route path="/computer" Component={Computer}/>
+    <Route path="/news1" Component={News1}/>
+    <Route path="/news2" Component={News2}/>
+    <Route path="/news3" Component={News3}/>
+    <Route path="/news4" Component={News4}/>
+    <Route path="/news5" Component={News5}/>
+    <Route path="/news6" Component={News6}/>
+    <Route path="/news7" Component={News7}/>
+    <Route path="/news8" Component={News8}/>
+    <Route path="/p1" Component={P1}/>
+    <Route path="/p2" Component={P2}/>
+    <Route path="/p3" Component={P3}/>
+    <Route path="/p4" Component={P4}/>
+    <Route path="/p5" Component={P5}/>
+    <Route path="/p6" Component={P6}/>
+    <Route path="/article1" Component={Article1}/>
+    <Route path="/article2" Component={Article2}/>
+    <Route path="/article3" Component={Article3}/>
+    <Route path="/article4" Component={Article4}/>
+    <Route path="/overview" Component={Overviewo}/>
+    <Route path="/education" Component={Education}/>
+    <Route path="/health" Component={Health}/>
+    <Route path="/agriculture" Component={Agriculture}/>
+  </Routes>
+  <Footer/>
+  </>
+  )
+}
+export default App;
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="%PUBLIC_URL%favicon.png" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>ParvarishForYou</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init(
+        {
+          offset: 200,
+          duration: 800, 
+        } 
+      );
+    </script>
+  </body>
+</html>
+import React from 'react'
+import imgv from '../../assets/mission1.jpg'
+
+const mission = () => {
+  return (<>
+    <div className='heading'><h2>Mission</h2></div>
+    <div className="content1">
+      <div className="content1txt">
+        <p>To fulfill the gap between rural and urban population with various mechanism and also to reflect them in government census or survey.</p>
+</div>
+      <div className="content1img">
+        <img src={imgv} alt="img" />
+      </div>
+    </div>
+  </>
+  )
+}
+
+export default missionimport React from 'react'
+import imga from '../../assets/objective1.jpg'
+
+const Objective = () => {
+  return (<>
+    <div className='heading'><h2>Objective</h2></div>
+    <div className="content1">
+      <div className="content1txt">
+        <p>We are here to work for different sector like education, health, agriculture, organic farming, counselling, behavioural change (Mentioned by P.M. Modi in rajya-sabha on 08 feb 2018), social awareness, to full-fill the gap between government facilities and ground level benefits etc.</p>
+</div>
+      <div className="content1img">
+        <img src={imga} alt="img" />
+      </div>
+    </div>
+  </>
+  )
+}
+
+export default Objectiveimport React from "react";
+import imga from "../../assets/overviewa.jpg";
+
+const Overview = () => {
+  return (
+    <>
+      <div className="heading">
+        <h2>Overview</h2>
+      </div>
+      <div className="onlyheadingtxt">
+        <p>
+          This is an initiative by alumni of Jawahar Navodaya Vidyalaya and
+          youth from different sector of working environment, different part of
+          society and also from different geographical area, rural background.
+          We all have same mind set about the problem of remote area and also
+          challenges faced by backward class or other area of society. This
+          mindset gave a positive path to all of us to do something for positive
+          change . This laid the foundation of Parvarishforyou: a helping hand.
+        </p>
+      </div>
+      <div className="content1">
+        <div className="content1txt">
+          <ul>
+            <li>
+              Initiative by a Team of Youth having Common Goal for Positive
+              Change.
+            </li>
+            <li>
+              Team - From different working Sectors, Environment, Society and
+              Geographical area, rural background.
+            </li>
+            <li>
+              Common Goal - Eliminate problems and challenges faced by Backward
+              Class of rural area and Society.
+            </li>
+            <li>
+              This noble cause overwhelms and gives us the everlasting
+              motivation, energy and sufficient fuel to laid down the foundation
+              of Parvarish: a helping hand.
+            </li>
+            <li>
+              Parvarish - A Helping Hand’ will provide you the Canvas, Colour,
+              Palette and Brush to paint the dreams of a Child.
+            </li>
+            <li>
+              Canvas (Life of A child) + Colour, Palette & Brush (Parvarish) =
+              Painting (Dreams with flying Colours).
+            </li>
+          </ul>
+        </div>
+        <div className="content1img">
+          <img src={imga} alt="img" />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Overview;
+import React from 'react'
+import imgv from '../../assets/vision1.jpg'
+
+const Vission = () => {
+  return (<>
+    <div className='heading'><h2>Vision</h2></div>
+    <div className="content1">
+      <div className="content1txt">
+        <ul>
+          <li> Team to impart behavioural changes in society by the way of education.</li>
+          <li> To develop an ecosystem of mutualism instead of competetion for sustainable prosperity.</li>
+        </ul>
+</div>
+      <div className="content1img">
+        <img src={imgv} alt="img" />
+      </div>
+    </div>
+
+  </>
+  )
+}
+
+export default Vission
+import "../homelinks/links.css"
+const Babrala = () => {
+  return (
+    <>
+        <div className='heading'><h2>Babrala</h2></div>
+    </>
+  )
+}
+
+export default Babrala
+import "../homelinks/links.css"
+const Babrala = () => {
+  return (
+    <>
+        <div className='heading'><h2>Babrala</h2></div>
+    </>
+  )
+}
+
+export default Babrala
+import "../homelinks/links.css"
+const Babrala = () => {
+  return (
+    <>
+        <div className='heading'><h2>Babrala</h2></div>
+    </>
+  )
+}
+
+export default Babrala
+import "../homelinks/links.css"
+const Babrala = () => {
+  return (
+    <>
+        <div className='heading'><h2>Babrala</h2></div>
+    </>
+  )
+}
+
+export default Babrala
+import "../homelinks/links.css"
+const Babrala = () => {
+  return (
+    <>
+        <div className='heading'><h2>Babrala</h2></div>
+    </>
+  )
+}
+
+export default Babrala
+import "../homelinks/links.css"
+const Babrala = () => {
+  return (
+    <>
+        <div className='heading'><h2>Babrala</h2></div>
+    </>
+  )
+}
+
+export default Babrala
+import "../homelinks/links.css"
+const Babrala = () => {
+  return (
+    <>
+        <div className='heading'><h2>Babrala</h2></div>
+    </>
+  )
+}
+
+export default Babrala
+import "../homelinks/links.css"
+const Babrala = () => {
+  return (
+    <>
+        <div className='heading'><h2>Babrala</h2></div>
+    </>
+  )
+}
+
+export default Babrala
+import "../homelinks/links.css"
+const Babrala = () => {
+  return (
+    <>
+        <div className='heading'><h2>Babrala</h2></div>
+    </>
+  )
+}
+
+export default Babrala
+import "../homelinks/links.css"
+const Banking = () => {
+  return (<>
+    <div className='heading'><h2>Banking</h2></div>
+</>
+  )
+}
+
+export default Banking
+import "../homelinks/links.css"
+const Banking = () => {
+  return (<>
+    <div className='heading'><h2>Banking</h2></div>
+</>
+  )
+}
+
+export default Banking
+import "../homelinks/links.css"
+const Banking = () => {
+  return (<>
+    <div className='heading'><h2>Banking</h2></div>
+</>
+  )
+}
+
+export default Banking
+import "../homelinks/links.css"
+const Banking = () => {
+  return (<>
+    <div className='heading'><h2>Banking</h2></div>
+</>
+  )
+}
+
+export default Banking
+import "../homelinks/links.css"
+const Banking = () => {
+  return (<>
+    <div className='heading'><h2>Banking</h2></div>
+</>
+  )
+}
+
+export default Banking
+import "../homelinks/links.css"
+const Banking = () => {
+  return (<>
+    <div className='heading'><h2>Banking</h2></div>
+</>
+  )
+}
+
+export default Banking
+import "../homelinks/links.css"
+const Banking = () => {
+  return (<>
+    <div className='heading'><h2>Banking</h2></div>
+</>
+  )
+}
+
+export default Banking
+import "../homelinks/links.css"
+const Banking = () => {
+  return (<>
+    <div className='heading'><h2>Banking</h2></div>
+</>
+  )
+}
+
+export default Banking
+import "../homelinks/links.css"
+const Banking = () => {
+  return (<>
+    <div className='heading'><h2>Banking</h2></div>
+</>
+  )
+}
+
+export default Banking
+import "../homelinks/links.css"
+const Banking = () => {
+  return (<>
+    <div className='heading'><h2>Banking</h2></div>
+</>
+  )
+}
+
+export default Banking
+.container{
+    margin: 0;
+    padding: 0;
+
+} 
+.py-5{
+    background-color: black;
+    color: white;
+    width: 100vw;
+}
+
+.col-2{
+    margin-left: 10%;
+}
+.col-2 img{
+    width: 8vw;
+    height: 15vh;
+}
+.col-3 h5{
+    font-size: 20px;
+}
+.col-3{
+    margin-left: 0;
+    font-size: 20px;
+} 
+.col-3 ul li{
+    font-size: 20px;
+}
+.col-3 ul li a{
+    font-size: 20px;
+}
+.d-flex p{
+margin-left: 5%;
+}
+
+.d-flex ul{
+    margin-right: 5%;
+}
+.ms-3{
+    font-size: 20px;
+}
+
+@media (min-width: 320px)
+and (max-width:480px){
+.col-2 {
+    margin-left: 5%;
+}
+.col-2 img{
+    height: 100px;
+    width: 80px;
+
+}
+.col-3{
+    margin-left:40px;
+}
+.col-3 h5{
+    font-size: 15px;
+}
+.col-3 ul li a{
+    font-size: 15px;
+}
+}
+
+@media (min-width: 480px)
+    and (max-width:768px) {
+.col-2 {
+    margin-left: 5%;
+}
+.col-2 img{
+    height: 12vh;
+    width: 16vw;
+
+}
+.col-3{
+    margin-left:40px;
+}
+}
+
+@media (min-width: 768px)
+and (max-width:1024px){
+.py-5{
+    width: 100vw;
+}
+.col-2 img{
+    height: 12vh;
+    width: 13vw;
+}
+.col-3{
+    margin-left:35px;
+}
+}
+@media (min-width: 1024px)
+and (max-width:1200px){
+    .col-2{
+        margin-left:6% ;
+    }
+    .col-2 img{
+        height: 15vh;
+        width: 12vw;
+    }
+}
+@media (min-width: 1200px)
+and (max-width:1400px){
+    .col-2 img{
+        height: 15vh;
+        width: 12vw;
+    }
+}
+import React from 'react'
+import logof from "../../assets/logof.png"
+import { ImTwitter } from 'react-icons/im'
+import {BiLogoFacebook} from 'react-icons/bi'
+import {AiFillYoutube} from 'react-icons/ai'
+import {DiAndroid} from 'react-icons/di'
+import { Link } from 'react-router-dom'
+import "./footer.css"
+
+const Footer = () => {
+  const year =new Date().getFullYear()
+  return (<>
+  <div class="container bg-black">
+  <footer class="py-5">
+    <div class="row ">
+    
+    <div class="col-2 ">
+          <img src={logof} height="60px" width={180} />
+    </div>
+
+    <div class="col-3  offset-1">
+          <h5>Links</h5>
+          <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our Work</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Resources</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Exams</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Gallery</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Joy of giving</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Join Us</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Our blog</a></li>
+
+
+        </ul>
+        
+      </div>
+
+      <div class="col-3">
+        <h5 class=" px-11" >Capacity Building Centers</h5>
+        <ul class="nav flex-column">
+            <li><Link className="nav-link p-1 text-muted h6" to="/bisauli">Bisauli</Link></li>
+            <li><Link className="nav-link p-1 text-muted h6" to="/bilsi">Bilsi</Link></li>
+            <li><Link className="nav-link p-1 text-muted h6" to="/babrala">Babrala</Link></li>
+            <li><Link className="nav-link p-1 text-muted h6" to="/ughaiti">Ughaiti</Link></li>
+            <li><Link className="nav-link p-1 text-muted h6" to="/islamnagar">Islamnagar</Link></li>
+            <li><Link className="nav-link p-1 text-muted h6" to="/behjoi">Behjoi</Link></li>
+            <li><Link className="nav-link p-1 text-muted h6" to="/chandausi">Chandausi</Link></li>
+            <li><Link className="nav-link p-1 text-muted h6" to="/ujhani">Ujhani</Link></li>
+            <li><Link className="nav-link p-1 text-muted h6" to="/gawan">Gawan</Link></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-between py-4 my-4 border-top">
+      <p>© 2018-{year} www.parvarishforyou.org .  All Rights Reserved.</p>
+      <ul class="list-unstyled d-flex">
+        <li class="ms-3">
+            <a href="https://twitter.com/parvarishforyou"><ImTwitter className="contact_option_icon" /></a>
+        </li>
+        <li class="ms-3">
+         <a href="https://www.facebook.com/parvarishforyou/"><BiLogoFacebook className="contact_option_icon" /></a>
+         </li>
+         <li class="ms-3">
+         <a href="https://www.youtube.com/channel/UCgcTtJxtQ3ZVLQ3iDdpACEQ/featured?view_as=subscriber"><AiFillYoutube className="contact_option_icon" /></a>
+         </li>
+         <li class="ms-3">
+         <a href="https://play.google.com/store/apps/details?id=com.p4u.parvarish&hl=en"><DiAndroid className="contact_option_icon" /></a>
+         </li>
+      </ul>
+    </div>
+  </footer>
+</div>
+  </>)
+}
+
+export default Footer
+.gallery{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%;
+    padding: 12px,12px;
+}
+.gallery .pics{
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+    cursor: pointer;
+    margin-bottom: 12px;
+}
+.pics :hover{
+    filter: opacity(.7);
+}
+@media (max-width:991px){
+    .gallery{
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+    }
+}
+@media (max-width:480px){
+    .gallery{
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+        -webkit-column-width: 100%;
+        -moz-column-width: 100%;
+        column-width: 100%;
+
+    }
+}
+ .img{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,.7);
+    transition: opacity .4s ease, visibility .4s ease , transform .5s ease-in-out;
+    /* opacity: 0; 
+    visibility: hidden;
+    transform: scale(0); */
+    z-index: 999;
+    overflow: hidden;
+}
+.img img{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: block;
+    line-height: 0;
+    box-sizing: border-box;
+    padding: 20px 0 20px;
+    margin: 0 auto;
+}
+import React from 'react'
+import Img1 from '../../assets/gimg/g1.jpg'
+import Img2 from '../../assets/gimg/g2.jpg'
+import Img3 from '../../assets/gimg/g3.jpg'
+import Img4 from '../../assets/gimg/g4.jpg'
+import Img5 from '../../assets/gimg/g5.jpg'
+import Img6 from '../../assets/gimg/g6.jpg'
+import Img7 from '../../assets/gimg/g7.jpg'
+import Img8 from '../../assets/gimg/g8.jpg'
+import Img9 from '../../assets/gimg/g9.jpg'
+import Img10 from '../../assets/gimg/g10.jpg'
+import Img11 from '../../assets/gimg/g11.jpg'
+import Img12 from '../../assets/gimg/g12.jpg'
+import Img13 from '../../assets/gimg/g13.jpg'
+import Img14 from '../../assets/gimg/g14.jpg'
+import Img15 from '../../assets/gimg/g15.jpg'
+import Img16 from '../../assets/gimg/g16.jpg'
+import Img17 from '../../assets/gimg/g17.jpg'
+import Img18 from '../../assets/gimg/g18.jpg'
+import Img19 from '../../assets/gimg/g19.jpg'
+import Img20 from '../../assets/gimg/g20.jpg'
+import Img21 from '../../assets/enhance.jpg'
+import Img22 from '../../assets/sportseminar.jpg'
+import Img23 from '../../assets/academicpartnership.png'
+import Img24 from '../../assets/capacitybuilding.png'
+import Img25 from '../../assets/knowledgecenter.png'
+import Img26 from '../../assets/telantsupport.png'
+import Img27 from '../../assets/technical.png'
+import "./g.css"
+
+const Gallery = () => {
+
+  const data=[{id:1,src:Img1},{id:2,src:Img2},{id:3,src:Img3},{id:4,src:Img4},{id:5,src:Img5},{id:6,src:Img6},{id:7,src:Img7},{id:8,src:Img8},{id:9,src:Img9},{id:10,src:Img10},{id:11,src:Img11},{id:12,src:Img12},{id:13,src:Img13},{id:14,src:Img14},{id:15,src:Img15},{id:16,src:Img16},{id:17,src:Img17},{id:18,src:Img18},{id:19,src:Img19},{id:20,src:Img20},{id:21,src:Img21},{id:22,src:Img22},{id:23,src:Img23},{id:24,src:Img24},{id:25,src:Img25},{id:26,src:Img26},{id:27,src:Img27}]
+
+  // const [styl,setstyl] = useState(false);
+  // const [curimgsrc,setcurimgsrc] =useState('');
+  // const fullimg = (imgsrc)=>{
+  //   setcurimgsrc(imgsrc);
+  //   setstyl(true);
+  // }
+
+
+  return (<>
+  {/* <div className={styl? 'img open' :'img'}>
+    <img src={curimgsrc} alt="" />
+  </div> */}
+  <div className="gallery">
+    {
+      data.map((item,index)=>{
+        return(
+          <div className="pics" key={index}>
+            <img src={item.src} style={{width: '100%'}}  alt="img"  />{/*onClick={()=> fullimg(item.src)}*/}
+          </div>
+        )
+      })
+    }
+  </div>
+  </>
+  )
+}
+
+export default Gallery
+import React from "react";
+import { NavLink } from "react-router-dom";
+import imga from "../../assets/agricuture.jpg";
+
+const Agriculture = () => {
+  return (
+    <>
+      <div className="heading">
+        <h2>Agriculture</h2>
+      </div>
+      <div className="content1">
+        <div className="content1txt">
+          <p>
+            Agriculture is the bone of our economy and it should be taken care.
+            We are working to enrich agricultural field in India. Below are the
+            areas which are being worked upon:
+            <li>
+              Farming, Fishery, Beekeeping, Dairy, Horticulture, Animal
+              Husbandry, Pottery
+            </li>
+            <li>Animal health and soil health</li>
+            <li>Traditional to technological farming</li>
+            <li>Technology awareness - dip irrigation, soil fertility card</li>
+            <li>Government policy awareness</li>
+            <li>Kissan library</li>
+            <br/>
+            नींबू घास की खेती कैसे करें: Complete Information:<NavLink className="nav-link active " to="https://parvarish4u.blogspot.com/2019/11/blog-post.html">Read More</NavLink>
+          </p>
+        </div>
+        <div className="content1img">
+          <img src={imga} alt="img" />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Agriculture;
+import React from "react";
+import img1 from "../../assets/telantsupport.png";
+import img2 from "../../assets/knowledgecenter.png";
+import img3 from "../../assets/academicpartnership.png";
+import img4 from "../../assets/capacitybuilding.png";
+import img5 from "../../assets/technical.png";
+
+const Education = () => {
+  return (
+    <>
+      <div className="heading">
+        <h2>Education</h2>
+      </div>
+      <div className="onlyheadingtxt">
+        <p>
+          We are working in education field where there is no institutional
+          source of education. As most of the places have schools but there is
+          no carrier guiding or preparation centres. This is the major cause of
+          backwardness there as we think. Most of the people who get education
+          move away from these places. This creates a gap between rural and
+          urban development. We are working to fulfill this gap.
+        </p>
+      </div>
+      <div className="content1">
+        <div className="content1txt">
+          <h5>ParvarishForYou Talent Support Scheme</h5>
+
+          <ol>
+            <li>
+              ParvarishForYou has started this scheme. Under this scheme we are
+              trying to support talent either in academics , sports and any
+              other field of life. Under this scheme organisation support
+              students in different ways.
+            </li>
+            <li>
+              To support student one year school fee of student who got first
+              position in school. (Already selected two students from two
+              different schools).
+            </li>
+            <li>
+              Awarding and supporting district topper with cash support and
+              other required support .
+            </li>
+            <li>
+              There are several other ways where organisation is working to
+              support real and needy talent.
+            </li>
+          </ol>
+        </div>
+        <div className="content1img">
+          <img src={img1} alt="img" />
+        </div>
+      </div>
+      <div className="content1">
+        <div className="content1txt">
+          <h5>ParvarishForYou Knowledge Center </h5>
+          <ul>
+            Under this scheme we are in the process of establishing libraries at
+            various remote locations where students in need of books. These
+            libraries also accept books as donation from around the globe
+            because most of the people gives at no cost .so students can use
+            these books , magzines , reference books, syllabus books from these
+            libraries at very nominal membership fee. So , if any one interested
+            to donate books pls send your name and address with city name to our
+            WhatsApp no. We will arrange a pick up from there. This is to create
+            a habit of reading in society which is getting reduce day by day.
+          </ul>
+        </div>
+        <div className="content1img">
+          <img src={img2} alt="img" />
+        </div>
+      </div>
+      <div className="content1">
+        <div className="content1txt">
+          <h5>ParvarishForYou Academic Partnership Program </h5>
+          <ul>
+            This programme has been started with the vision of reducing or
+            eliminating the gap of international level school and school which
+            don't have sufficient resources. Our team organises different
+            activites and different sessions at school at different time . Also
+            we provide sessions for teachers so that gap can be reduced. If any
+            one interested for parternship please send your name and address to
+            our WhatsApp numner. Our concerned team will contact you soon.
+          </ul>
+        </div>
+        <div className="content1img">
+          <img src={img3} alt="img" />
+        </div>
+      </div>
+      <div className="content1">
+        <div className="content1txt">
+          <h5>ParvarishForYou Capacity Building Center </h5>
+          <ul>
+            Under this scheme we are establishing centres where sessions and
+            classes can be arranged by expert to increase capacity of students.
+            As most of problems of society can be solved with this capacity
+            building initiative.
+            <br />
+            Currently we are running our capacity building centres which is
+            giving very good response.
+          </ul>
+        </div>
+        <div className="content1img">
+          <img src={img4} alt="img" />
+        </div>
+      </div>
+      <div className="content1">
+        <div className="content1txt">
+          <h5>ParvarishForYou Technical Partnership Program</h5>
+          <ul>
+          Under this programme we are making parternership with the computer centres, shops which use to help students. We provide all kind of assistance to them with the help of our technical team. We also pay charges for those talented students who are not able to pay that .
+          <br/>
+So if you are interested to be technical partner pls send you name and address to WhatsApp .our team will contact you soon .
+          </ul>
+        </div>
+        <div className="content1img">
+          <img src={img5} alt="img" />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Education;
+import React from "react";
+import imga from "../../assets/health.jpg"
+
+const Health = () => {
+  return (
+    <>
+      <div className="heading">
+        <h2>Health</h2>
+      </div>
+      <div className="content1">
+        <div className="content1txt">
+          <p>
+            We are working to improve health and aware people about different
+            health issues faced by them. We are organizing various programs at
+            ground level so that maximum people can be benefited. Programs like
+            below:
+            <li>Health awareness camps.</li>
+            <li>Yoga classes.</li>
+          </p>
+        </div>
+        <div className="content1img">
+          <img src={imga} alt="img" />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Health;
+import React from "react";
+
+const Overviewo = () => {
+  return (
+    <>
+      <div className="heading">
+        <h2>Overview</h2>
+      </div>
+      <div className="onlyheadingtxt">
+        <p>
+          We are here to work for different sector like education, health,
+          agriculture, organic farming, counselling, behavioural change
+          (Mentioned by P.M. Modi in rajya-sabha on 08 feb 2018), social
+          awareness, to full-fill the gap between government facilities and
+          ground level benefits etc.
+        </p>
+      </div>
+    </>
+  );
+};
+
+export default Overviewo;
+import React, { useState } from 'react'
+import './nav.css'
+import logo from "../../assets/logo.png"
+import { Link } from 'react-router-dom'
+const Navbar = () => {
+      
+
+
+  return (<>
+  <nav className="navbar navbar-expand-lg navbar-light bg-light" id="navbarDropdownMenuLink">
+  <div className="container-fluid">
+    <a className="navbar-brand" href="#" ><img src={logo} height="60px" width={190}/></a>
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse space" id="navbarNavDropdown">
+      <ul className="navbar-nav">
+        <li className="nav-item">
+        <Link className="nav-link active" to="/">Home</Link>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            About us
+          </a>
+          <ul className="dropdown-menu dropdowncustom" aria-labelledby="navbarDropdownMenuLink">
+            <li><Link className="dropdown-item" to="/overviewa">Overview</Link></li>
+            <li><Link className="dropdown-item" to="/objective">Objective</Link></li>
+            <li><Link className="dropdown-item" to="/vision">Vision</Link></li>
+            <li><Link className="dropdown-item" to="/mission">Mission</Link></li>
+          </ul>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Our work
+          </a>
+          <ul className="dropdown-menu dropdowncustom" aria-labelledby="navbarDropdownMenuLink">
+          <li><Link className="dropdown-item" to="/overview">Overview</Link></li>
+          <li><Link className="dropdown-item" to="/education">Education</Link></li>
+          <li><Link className="dropdown-item" to="/health">Health</Link></li>
+          <li><Link className="dropdown-item" to="/agriculture">Agriculture</Link></li>
+          </ul>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Resources
+          </a>
+          <ul className="dropdown-menu dropdowncustom" aria-labelledby="navbarDropdownMenuLink">
+            <li><a className="dropdown-item" href="#">Article</a></li>
+            <li><a className="dropdown-item" href="#">Videos</a></li>
+            <li><a className="dropdown-item" href="#">Newsletter</a></li>
+            <li><a className="dropdown-item" href="#">Our Work Story</a></li>
+            <li><a className="dropdown-item" href="#">Capacity Building</a></li>
+            <li><a className="dropdown-item" href="#">Downloads</a></li>
+          </ul>
+        </li>
+        <li className="nav-item">
+        <Link className="nav-link active" to="/gallery">Gallery</Link>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Centers
+          </a>
+          <ul className="dropdown-menu dropdowncustom" aria-labelledby="navbarDropdownMenuLink">
+          <li><Link className="dropdown-item" to="/bisauli">Bisauli</Link></li>
+            <li><Link className="dropdown-item" to="/bilsi">Bilsi</Link></li>
+            <li><Link className="dropdown-item" to="/babrala">Babrala</Link></li>
+            <li><Link className="dropdown-item" to="/ughaiti">Ughaiti</Link></li>
+            <li><Link className="dropdown-item" to="/islamnagar">Islamnagar</Link></li>
+            <li><Link className="dropdown-item" to="/behjoi">Behjoi</Link></li>
+            <li><Link className="dropdown-item" to="/chandausi">Chandausi</Link></li>
+            <li><Link className="dropdown-item" to="/ujhani">Ujhani</Link></li>
+            <li><Link className="dropdown-item" to="/gawan">Gawan</Link></li>
+          </ul>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           Exams
+          </a>
+          <ul className="dropdown-menu dropdowncustom" aria-labelledby="navbarDropdownMenuLink">
+            <li><Link className="dropdown-item" to="/upsc">UPSC</Link></li>
+            <li><Link className="dropdown-item" to="/ssc">SSC</Link></li>
+            <li><Link className="dropdown-item" to="/ctet">CTET</Link></li>
+            <li><Link className="dropdown-item" to="/banking">BANKING</Link></li>
+            <li><Link className="dropdown-item" to="/railways">RAILWAYS</Link></li>
+            <li><Link className="dropdown-item" to="/ndacds">NDA/CDS</Link></li>
+            <li><Link className="dropdown-item" to="/navodaya">NAVODAYA ENTRANCE</Link></li>
+            <li><Link className="dropdown-item" to="/sainik">SAINIK SCHOOL</Link></li>
+            <li><Link className="dropdown-item" to="/english">ENGLISH SPEAKING</Link></li>
+            <li><Link className="dropdown-item" to="/computer">COMPUTER COURSE</Link></li>
+            
+          </ul>
+        </li>
+        <li className="nav-item dropdown">
+          <a className="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          More
+          </a>
+          <ul className="dropdown-menu dropdowncustom" aria-labelledby="navbarDropdownMenuLink">
+            <li><a className="dropdown-item" href="#">Our Blogs</a></li>
+            <li><a className="dropdown-item" href="#">Join of Giving</a></li>
+            <li><a className="dropdown-item" href="#">Scholarships</a></li>
+            <li><a className="dropdown-item" href="#">Govt. Scheme</a></li>
+          </ul>
+        </li>
+        <li className="nav-item">
+          <a className="nav-link active" href="#">Contact us</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  </>
+  )
+}
+
+export default Navbar
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+.custom{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+.space{
+    justify-content: right;
+}
+.dropdowncustom{
+    background: white;
+}
+
+@media (min-width: 320px)
+and (max-width:480px){
+    .container-fluid{
+        justify-content: none;
+
+    }
+    .navbar-light .navbar-toggler {
+        margin-left: 10%;
+    }
+    .navbar-brand img{
+        width: 50vw;
+        height: 8vh;
+    }
+}
+
+@media (min-width: 480px)
+    and (max-width:768px) {
+        .navbar-brand img{
+            width: 45vw;
+            height: 10vh;
+        }
+    .container-fluid{
+        justify-content: none;
+
+    }
+    .navbar-light .navbar-toggler {
+        margin-left: 10%;
+    }
+}
+@media (min-width: 768px)
+    and (max-width:1024px){
+        .navbar-brand img{
+            width: 25vw;
+            height: 10vh;
+        }
+        .navbar-nav{
+            margin-right: 2vw;
+            font-size: 15px
+        }
+         .navbar-nav li{
+            padding-right: 0rem;
+         } 
+    }
+
+    @media (min-width: 1024px)
+    and (max-width:1200px){
+        .navbar-brand img{
+            width: 25vw;
+            height: 10vh;
+        }
+        .navbar-nav{
+            margin-right: 1vw;
+            font-size: 16px
+        }
+         .navbar-nav li{
+            padding-right: 0rem;
+         } 
+
+    }
+
+    @media (min-width: 1200px)
+    and (max-width:1400px){
+        .navbar-brand img{
+            width: 25vw;
+            height: 10vh;
+        }
+        .navbar-nav{
+            margin-right: 2vw;
+            font-size: 18px
+        }
+         .navbar-nav li{
+            padding-right: 0rem;
+         } 
+    }
+    @media (min-width: 1400px)
+    and (max-width:1600px){
+        .navbar-brand img{
+            width: 18vw;
+            height: 10vh;
+        }
+    }
+    import React from 'react'
+
+const Article2 = () => {
+  return (<>
+  <div className='heading'><h2>Are you a perfectionist? Do you have perfection syndrome?</h2></div>
+  <div className="onlyheadingtxt"><p>Well, I always tried to be perfect on everything I did. It gave me satisfaction and often appreciation if successful. But it also put extra pressure as well as pain in case of failure. At one point I realized that perfection is needed but not necessarily on everything! For example, perfection for a Neurosurgeon is needed while doing a brain surgery but it is not necessary while having a dinner with steak! Shouldn’t the perfection level of spacecraft be different from lawn mower?Now the question is, what level of perfection is needed from whom, and on what?
+I was listening to a Swedish author and below are few aspects to consider to be free ourselves from perfection;
+Control: Do we really need to be in control of everything? It is important to understand what to control and what to let go.
+Compete: Do we really need to compete on everything? Ask yourself with whom and for what reason are you competing.
+Fail: Admit failure instead of blaming someone or something.
+Expectation: Why should you put high expectation on yourself or on others? Is that justified? Is that clearly communicated?
+All or nothing: The all or nothing approach doesn’t work in the long term, we must learn how to negotiate and compromise if needed.
+Inner clubs: We have two inner clubs, an ‘Inner critic’ and a ‘Fan’ club. The Inner critic club members blame and put things down, and the Fan club members praise and cheer things up. It’s up to you to decide which club to patronize.
+Salvador Dali once stated, “Have no fear of perfection - you’ll never reach it.” Let us be free from perfectionism. In most cases, good enough is good enough.</p></div>
+  </>)
+}
+
+export default Article2
+import React from 'react'
+import Bookpic from "../../../assets/article1.jpg"
+
+const Article1 = () => {
+  return (<>
+    <div className='heading'><h2>बातें जो विद्यार्थियों को कभी नहीं सिखाई जाती</h2></div>
+    <div className="onlyimg">
+      <img src={Bookpic} alt="img" />
+    </div>
+</>
+  )
+}
+
+export default Article1
+import React from 'react'
+import Bookpic from "../../../assets/article4.jpg"
+
+const Article4 = () => {
+  return (<>
+    <div className='heading'><h2>कोई दोस्त क्यों नहीं मिलता</h2></div>
+    <div className="onlyimg">
+      <img src={Bookpic} alt="img" />
+    </div>
+</>
+  )
+}
+
+export default Article4
+import React from 'react'
+import Bookpic from "../../../assets/article4.jpg"
+
+const Article4 = () => {
+  return (<>
+    <div className='heading'><h2>कोई दोस्त क्यों नहीं मिलता</h2></div>
+    <div className="onlyimg">
+      <img src={Bookpic} alt="img" />
+    </div>
+</>
+  )
+}
+
+export default Article4
+import React from 'react'
+import Bookpic from "../../../assets/article4.jpg"
+
+const Article4 = () => {
+  return (<>
+    <div className='heading'><h2>कोई दोस्त क्यों नहीं मिलता</h2></div>
+    <div className="onlyimg">
+      <img src={Bookpic} alt="img" />
+    </div>
+</>
+  )
+}
+
+export default Article4
+import React from 'react'
+import Bookpic from "../../../assets/bookdonation.jpg"
+
+const News1 = () => {
+  return (<>
+    <div className='heading'><h2>Book Donation Derive</h2></div>
+    <div className="onlyimg">
+      <img src={Bookpic} alt="img" />
+    </div>
+</>
+  )
+}
+
+export default News1
+import React from 'react'
+import Bookpic from "../../../assets/bookdonation.jpg"
+
+const News1 = () => {
+  return (<>
+    <div className='heading'><h2>Book Donation Derive</h2></div>
+    <div className="onlyimg">
+      <img src={Bookpic} alt="img" />
+    </div>
+</>
+  )
+}
+
+export default News1
+import React from 'react'
+import Bookpic from "../../../assets/bookdonation.jpg"
+
+const News1 = () => {
+  return (<>
+    <div className='heading'><h2>Book Donation Derive</h2></div>
+    <div className="onlyimg">
+      <img src={Bookpic} alt="img" />
+    </div>
+</>
+  )
+}
+
+export default News1
+import React from 'react'
+import Bookpic from "../../../assets/bookdonation.jpg"
+
+const News1 = () => {
+  return (<>
+    <div className='heading'><h2>Book Donation Derive</h2></div>
+    <div className="onlyimg">
+      <img src={Bookpic} alt="img" />
+    </div>
+</>
+  )
+}
+
+export default News1
+import React from 'react'
+import Bookpic from "../../../assets/bookdonation.jpg"
+
+const News1 = () => {
+  return (<>
+    <div className='heading'><h2>Book Donation Derive</h2></div>
+    <div className="onlyimg">
+      <img src={Bookpic} alt="img" />
+    </div>
+</>
+  )
+}
+
+export default News1
+import React from 'react'
+import Bookpic from "../../../assets/bookdonation.jpg"
+
+const News1 = () => {
+  return (<>
+    <div className='heading'><h2>Book Donation Derive</h2></div>
+    <div className="onlyimg">
+      <img src={Bookpic} alt="img" />
+    </div>
+</>
+  )
+}
+
+export default News1
+import React from 'react'
+import Bookpic from "../../../assets/bookdonation.jpg"
+
+const News1 = () => {
+  return (<>
+    <div className='heading'><h2>Book Donation Derive</h2></div>
+    <div className="onlyimg">
+      <img src={Bookpic} alt="img" />
+    </div>
+</>
+  )
+}
+
+export default News1
+import React from 'react'
+import Bookpic from "../../../assets/bookdonation.jpg"
+
+const News1 = () => {
+  return (<>
+    <div className='heading'><h2>Book Donation Derive</h2></div>
+    <div className="onlyimg">
+      <img src={Bookpic} alt="img" />
+    </div>
+</>
+  )
+}
+
+export default News1
+import React from "react";
+import imga from "../../../assets/telantsupport.png";
+
+const P1 = () => {
+  return (
+    <>
+      <div className="heading">
+        <h2>ParvarishForYou Talent Support Scheme</h2>
+      </div>
+      <div className="content1">
+        <div className="content1txt">
+          <p>
+            ParvarishForYou has started this scheme. Under this scheme we are
+            trying to support talent either in academics , sports and any other
+            field of life. Under this scheme organisation support students in
+            different ways.
+            <ol>
+              <li>
+                To support student one year school fee of student who got first
+                position in school. (Already selected two students from two
+                different schools).
+              </li>
+              <li>
+                Awarding and supporting district topper with cash support and
+                other required support .
+              </li>
+            </ol>
+            There are several other ways where organisation is working to
+            support real and needy talent.
+          </p>
+        </div>
+        <div className="content1img">
+          <img src={imga} alt="img" />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default P1;
+import React from "react";
+import imga from "../../../assets/knowledgecenter.png";
+
+const P2 = () => {
+  return (
+    <>
+      <div className="heading">
+        <h2>ParvarishForYou Knowledge Center</h2>
+      </div>
+      <div className="content1">
+        <div className="content1txt">
+          <p>
+            Under this scheme we are in the process of establishing libraries at
+            various remote locations where students in need of books. These
+            libraries also accept books as donation from around the globe
+            because most of the people gives at no cost .so students can use
+            these books , magzines , reference books, syllabus books from these
+            libraries at very nominal membership fee. So , if any one interested
+            to donate books pls send your name and address with city name to our
+            WhatsApp no. We will arrange a pick up from there. This is to create
+            a habit of reading in society which is getting reduce day by day.
+          </p>
+        </div>
+        <div className="content1img">
+          <img src={imga} alt="img" />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default P2;
+import React from "react";
+import imga from "../../../assets/technical.png";
+
+const P3 = () => {
+  return (
+    <>
+      <div className="heading">
+        <h2>ParvarishForYou Technical Partnership Program </h2>
+      </div>
+      <div className="content1">
+        <div className="content1txt">
+          <p>
+            Under this programme we are making parternership with the computer
+            centres, shops which use to help students. We provide all kind of
+            assistance to them with the help of our technical team. We also pay
+            charges for those talented students who are not able to pay that .
+            So if you are interested to be technical partner pls send you name
+            and address to WhatsApp .our team will contact you soon .{" "}
+          </p>
+        </div>
+        <div className="content1img">
+          <img src={imga} alt="img" />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default P3;
+import React from "react";
+import imga from "../../../assets/capacitybuilding.png";
+
+const P4 = () => {
+  return (
+    <>
+      <div className="heading">
+        <h2>ParvarishForYou Capacity Building Center</h2>
+      </div>
+      <div className="content1">
+        <div className="content1txt">
+          <p>
+            Under this scheme we are establishing centres where sessions and
+            classes can be arranged by expert to increase capacity of students.
+            As most of problems of society can be solved with this capacity
+            building initiative. Currently we are running our capacity building
+            centres which is giving very good response
+          </p>
+        </div>
+        <div className="content1img">
+          <img src={imga} alt="img" />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default P4;
+import React from "react";
+import imga from "../../../assets/academicpartnership.png";
+
+const P5 = () => {
+  return (
+    <>
+      <div className="heading">
+        <h2>ParvarishForYou Academic Partner Program </h2>
+      </div>
+      <div className="content1">
+        <div className="content1txt">
+          <p>
+            This programme has been started with the vision of reducing or
+            eliminating the gap of international level school and school which
+            don't have sufficient resources. Our team organises different
+            activites and different sessions at school at different time
+          </p>
+        </div>
+        <div className="content1img">
+          <img src={imga} alt="img" />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default P5;
+import React from "react";
+import imga from "../../../assets/intershipprogram.jpg";
+
+const P6 = () => {
+  return (
+    <>
+      <div className="heading">
+        <h2>ParvarishForYou Internship Program </h2>
+      </div>
+      <div className="content1">
+        <div className="content1txt">
+          <p>
+            ParvarishForYou has started this program to provide internship for
+            freshers or students. Under this program individual will work under
+            the guidance of our experienced team
+          </p>
+        </div>
+        <div className="content1img">
+          <img src={imga} alt="img" />
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default P6;
+#root{
+    overflow: hidden;
+    background-color: rgb(222, 222, 222);
+}
+.heading{
+    align-items: center;
+    background-color: #28398a;
+    margin-bottom: 2%;
+}
+.heading h2{
+    font-size: 76px;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+
+}
+.onlyheadingtxt{
+    font-weight: normal;
+}
+.onlyheadingtxt p{
+    font-size: 25px;
+    color: #0A2640;
+    width: 90vw;
+    margin-left: 5vw;
+    font-weight: 500;
+   }
+   .content1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 10vh;
+    margin-top: 8vh;
+   }
+   .content1txt {
+    width: 45vw;
+   }
+   .content1txt p{
+    text-wrap: wrap;
+    font-size: 30px;
+    color: #0A2640;
+    font-weight: 500;
+   }
+   .content1txt ul{
+    text-wrap: wrap;
+    font-size: 21px;
+    color: #0A2640;
+    padding-left: 0rem;
+   }
+   .content1txt ol{
+    font-size: 21px;
+    text-wrap: wrap;
+    color: #0A2640;
+   }
+   .content1txt h5{
+    text-wrap: wrap;
+    font-size: 33px;
+    color: #0A2640;
+    font-weight: 700;
+   }
+   .content1 img{
+    height: 45vh;
+    width: 35vw;
+   }
+   .onlyimg{
+    display: flex;
+    justify-content: center;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+   }
+    
+   @media screen and (min-width:320px)
+   and (max-width:480px) {
+    .heading h2{
+        font-size: 50px;
+    }
+    .onlyheadingtxt p{
+        font-size: 14px;
+    }
+    .content1txt ul{
+        font-size: 12px;
+    }
+    .content1 {
+        flex-direction: column-reverse;
+        margin-bottom: 5vh;
+    }
+    .content1txt{
+        width: 90vw;
+        margin-right: 15px;
+        margin-top: 20px;
+    }
+    .content1txt p{
+        font-size: 15px;
+        width: 75vw;
+        margin-left: 43px;
+    }
+    .content1 img{
+        height: 20vh;
+        width: 70vw;
+        margin-top: 15px;
+    }
+    .onlyimg img{
+        width: 90vw;
+        height: 40vh;
+    }
+   }
+   @media screen and (min-width:480px)
+   and (max-width:768px){
+    .heading h2{
+        font-size: 55px;
+    }
+    .onlyheadingtxt p{
+        font-size: 15px;
+    }
+    .content1txt ul{
+        font-size: 15px;
+    }
+    .content1 {
+        flex-direction: column-reverse;
+        margin-bottom: 5vh;
+    }
+    .content1txt{
+        width: 90vw;
+        margin-right: 15px;
+        margin-top: 20px;
+    }
+    .content1txt p{
+        font-size: 15px;
+        width: 82vw;
+        margin-left: 50px;
+    }
+    .content1 img{
+        height: 25vh;
+        width: 70vw;
+        margin-top: 15px;
+    }
+    .onlyimg img{
+        width: 90vw;
+        height: 40vh;
+    }
+   }
+   @media screen and (min-width:768px)
+   and (max-width:1024px){
+    .heading h2{
+        font-size: 65px;
+    }
+    .onlyheadingtxt p{
+        font-size: 16px;
+    }
+    .content1txt ul{
+        font-size: 13px;
+    }
+    .content1 {
+        flex-direction: row;
+        margin-bottom: 5vh;
+    }
+    .content1txt{
+        width: 50vw;
+        margin-right: 15px;
+        margin-top: 20px;
+    }
+    .content1txt p{
+        font-size: 15px;
+        width: 50vw;
+        margin-left: 50px;
+    }
+    .content1 img{
+        height: 25vh;
+        width: 30vw;
+        margin-top: 15px;
+    }
+    .onlyimg img{
+        width: 90vw;
+        height: 50vh;
+    }
+   }
+   @media screen and (min-width:1024px)
+   and (max-width:1200px){
+    .heading h2{
+        font-size: 65px;
+    }
+    .onlyheadingtxt p{
+        font-size: 16px;
+    }
+    .content1txt ul{
+        font-size: 13px;
+    }
+    .content1 {
+        flex-direction: row;
+        margin-bottom: 5vh;
+    }
+    .content1txt{
+        width: 50vw;
+        margin-right: 15px;
+        margin-top: 20px;
+    }
+    .content1txt p{
+        font-size: 15px;
+        width: 50vw;
+        margin-left: 50px;
+    }
+    .content1 img{
+        height: 25vh;
+        width: 30vw;
+        margin-top: 15px;
+    }
+    .onlyimg img{
+        width: 90vw;
+        height: 50vh;
+    }
+   }
+const article=[
+    {imgsrc : "https://images.assettype.com/fortuneindia%2F2022-09%2F305e0299-2791-4cf0-a2aa-97492d492bcb%2FRich_list__Tata_1.jpg?rect=0,8,1908,1073&w=1250&q=60",
+    content : "बातें जो विद्यार्थी को नहीं सिखाई जाती : रतन टाटा की सीख",
+    btnlink : "/article1",
+    },
+    {imgsrc : "https://discoverymood.com/wp-content/uploads/2019/05/iStock-949202990.jpg",
+    content : "Are you a perfectionist? Do you have perfection syndrome?",
+    btnlink : "/article2",
+    },
+    {imgsrc : "https://www.governancenow.com/temp/electricity21.jpg",
+    content : "50 हजार का बिल देख पंचायत खुद ही बिजली बनाने लगी",
+    btnlink : "/article3",
+    },
+    {imgsrc : "https://i0.wp.com/spiralofbliss.com/wp-content/uploads/2017/05/birdsofafeatheretsy3.jpg?w=1600&ssl=1",
+    content : "कोई दोस्त क्यों नहीं मिलता : विजय गोयल",
+    btnlink : "/article4"},
+]
+
+export default article;
+const blogs=[
+    {imgsrc : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfpRtsM0Nq7RQ7pGuNY4mjDn0ifRzRT_bWFQ&usqp=CAU",
+    content : "नींबू घास की खेती कैसे करें",
+    btnlink : "https://parvarish4u.blogspot.com/2019/11/blog-post.html"},
+    {imgsrc : "https://c.ndtvimg.com/2022-04/0j6j529o_pariksha-pe-charcha_625x300_01_April_22.jpg",
+    content : "परीक्षा की चर्चा: विद्यार्थियों को परीक्षा की तनाव रहित तैयारी के सूत्र ",
+    btnlink : "https://parvarishforyou.blogspot.com/2019/10/blog-post.html"},
+    
+]
+export default blogs;
+import React, { useState } from 'react'
+import blogs from './blogdata'
+import articles from './articledata'
+import { NavLink } from 'react-router-dom'
+import "./sliderimg.css"
+
+const Blogs = () => {
+    
+    const Scrollup =() =>{
+        window.scrollTo({top:0})
+      }
+
+    const [idx,setidx]=useState(0)
+
+    const clickRighta=()=>{
+        if (idx<articles.length-1){
+            setidx(idx+1);
+        }else{
+            setidx(idx);
+        }
+    }
+    const clickLefta=()=>{
+        if (idx>0){
+            setidx(idx-1);
+        }else{
+            setidx(idx);
+        }
+    }
+    const [idxb,setidxb]=useState(0)
+
+    const clickRightb=()=>{
+        if (idxb<blogs.length-1){
+            setidxb(idxb+1);
+        }else{
+            setidxb(idxb);
+        }
+    }
+    const clickLeftb=()=>{
+        if (idxb>0){
+            setidxb(idxb-1);
+        }else{
+            setidxb(idxb);
+        }
+    }
+  return (
+    <>
+        <div className="blogarticle">
+            <div className="articles">
+            <div className="headingarticle">
+                <h2>Articles</h2>
+            </div>
+            <div className="imgarticle">
+            <img src={articles[idx].imgsrc}/>
+            <div className="blogbutton">
+            <button onClick={clickLefta}>{'<'} </button>
+            <button onClick={clickRighta}>{'>'} </button>
+            </div>
+            </div>
+            <div className="topicarticle">
+            <p>{articles[idx].content}</p>
+            <NavLink onClick={Scrollup} to={articles[idx].btnlink} className="btnarticle">Read More</NavLink>
+            </div>
+            </div>
+            <div className="blogs">
+            <div className="headingarticle">
+                <h2>Blogs</h2>
+            </div>
+            <div className="imgarticle">
+            <img src={blogs[idxb].imgsrc}/>
+            <div className="blogbutton">
+            <button onClick={clickLeftb}>{'<'} </button>
+            <button onClick={clickRightb}>{'>'} </button>
+            </div>
+            </div>
+            <div className="topicarticle">
+            <p>{blogs[idxb].content}</p>
+            <NavLink className="btnarticle" to={blogs[idxb].btnlink}>Read More</NavLink>
+            </div>
+            </div>
+        </div>
+    </>
+  )
+}
+
+export default Blogs
+import React, { useState } from 'react'
+import News from './News';
+import ImageSlider from './ImageSlider'
+import { Link } from 'react-router-dom'
+import "./sliderimg.css";
+import Updates from './Updates';
+import Blogs from './Blogs';
+import Ourprogram from './Ourprogram';
+import Ourprogram2 from './Ourprogram2';
+import enhance from "../../assets/enhance.jpg"
+import Installapp from './Installapp';
+import Ourcontact from './Ourcontact';
+const Home = () => {
+
+  const Scrollup =() =>{
+    window.scrollTo({top:0})
+  }
+
+  const [curnews,setcurnews]= useState(1)
+
+  const changebarleft=()=>{
+      setcurnews(1)
+  }
+  const changebarright=()=>{
+    setcurnews(2)
+  }
+  const [curp,setcurp]= useState(1)
+
+  const changebarleftp=()=>{
+      setcurp(1)
+  }
+  const changebarrightp=()=>{
+    setcurp(2)
+  }
+  return (<>
+    <div className='div'>
+      <ImageSlider/>
+      <div className="data">
+      <div className="leftorange"></div>
+    
+        <div className="maindata">
+          <div className="headingMainData" >
+            <h2>ParvarishForYou</h2>
+          </div>
+          <div className="dataMainData" data-aos="fade-up">
+            <p>This is an initiative by alumni of Jawahar Navodaya Vidyalaya and youth from different sectors of working environment, different part of society and also from different geographical area, rural background. We all have same mind set about the problem of remote area and also challenges faced by backward class or other area of society. This mindset gave a positive path to all of us to do something for positive change . This laid the foundation of ParvarishForYou: a helping hand.</p>
+          </div>
+          <div className="btnMainData" >
+            <Link className="nav-link active a" to="/overviewa" onClick={Scrollup}>Read More</Link>
+          </div>
+        </div>
+        <div className="rightorange"></div>
+        
+        </div>
+        <div data-aos="fade-left">
+        {(curnews===1)? <News/>:<Updates/>}
+        </div>
+        <div className="navigate">
+        <div className="lefright">
+        <button onClick={changebarleft}>{'<'} </button>
+        <button onClick={changebarright}>{'>'} </button>
+        </div>
+        </div>
+        <div data-aos="fade-up">
+        <Blogs/>
+        </div>
+        <div className='pmaindiv' >
+        <div data-aos="zoom-in-up">
+        {(curp===1)? <Ourprogram/>:<Ourprogram2/>}
+        </div>
+        </div>
+        <div className="navigatediv">
+        <div className="navigate">
+        <div className="lefright">
+        <button onClick={changebarleftp}>{'<'} </button>
+        <button onClick={changebarrightp}>{'>'} </button>
+        </div>
+        </div>
+        </div>
+        <div className="enhanceheading">
+          <h2>Steps for Enhancement</h2>
+          <p>A positive path to all of us to do something for positive change</p>
+        </div>
+        <div className="enhanceimgtxt" >
+          <div className="enhanceimg" >
+            <img src={enhance} alt="img" width={300} height={300} />
+          </div>
+          <div className="enhancetxt" >
+          <ol>
+            <li>Think</li>
+            <p>ParvarishForYou provides an opportunity to think about your career goals.</p>
+            <li>Plan</li>
+            <p>ParvarishForYou is plateform where you can plan your career goals with the help of expereinced mentors.</p>
+            <li>Execute</li>
+            <p>Finally you can execute you career goals with the help of various programs run by ParvarishForYou.</p>
+          </ol>
+          </div>
+        </div>
+       <div className="installappbox">
+        <Installapp/>
+       </div>
+       <div className="ourcontact">
+        <Ourcontact/>
+       </div>
+    </div>
+    </>
+  )
+}
+
+export default Home
+import React from 'react'
+import { Link } from 'react-router-dom'
+import "./sliderimg.css"
+
+const Updates = () => {
+  const Scrollup =() =>{
+    window.scrollTo({top:0})
+  }
+  return (<>
+    <div className="maindiv">
+        <div className="newsHeading">
+            <h2>NEWS AND UPDATES</h2>
+        </div>
+        <div className="newsbox">
+            <div className="newsbox1">
+                <div className="topic">Sainik School - All India Sainik School entrance exam application 2019-20.</div>
+                <div className="btnnewsData">
+            <Link onClick={Scrollup} className="nav-link active " to="/news5">Read More</Link>
+          </div>
+            </div>
+            <div className="newsbox1">
+                <div className="topic">Sainik School -Sainik School Lucknow entrance exam application 2019-20.</div>
+                <div className="btnnewsData">
+            <Link onClick={Scrollup} className="nav-link active " to="/news6">Read More</Link>
+          </div>
+            </div>
+            <div className="newsbox1">
+                <div className="topic">विद्याज्ञान स्कूल प्रवेश परीक्षा : notification 2019-20: अंतिम तिथि : 15 अक्टूबर 2019</div>
+                <div className="btnnewsData">
+            <Link onClick={Scrollup} className="nav-link active " to="/news7">Read More</Link>
+          </div>
+            </div>
+            <div className="newsbox1">
+                <div className="topic">update later</div>
+                <div className="btnnewsData">
+            <Link onClick={Scrollup} className="nav-link active " to="/news8">Read More</Link>
+          </div>
+            </div>
+            </div>
+        </div>
+  </>
+  )
+}
+
+export default Updates
+import React, { useState , useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
+import parvarish from "../../assets/parvarish.png"
+import parvarish1 from "../../assets/parvarish1.png"
+import parvarish2 from "../../assets/parvarish2.png"
+import "./sliderimg.css"
+
+const ImageSlider = () => {
+  const [currentImage, setCurrentImage] = useState(1);
+
+  const imageFiles = [parvarish,parvarish1,parvarish2];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage % imageFiles.length) + 1);
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  return (<>
+   <div className='slide'>
+    <img src={imageFiles[currentImage - 1]} className='imginfo' />
+   </div>
+  
+  </>
+
+  );
+}
+
+export default ImageSlider
+import React from 'react'
+import playstore from '../../assets/playstore.png'
+import andriod from '../../assets/android.png'
+import { NavLink } from 'react-router-dom'
+
+const Installapp = () => {
+  return (<>
+     <div className="installapp">
+          <div className="appheading">
+            <h2>KINDLY INSTALL OUR APPS</h2>
+          </div>
+          <div className="appcards">
+            <div className="appcard1">
+            <a href=""><img src={playstore} alt="playstoreicon" /></a>
+              <h3>P4U Academy</h3>
+              <ul>
+                <li>It can be used as an essential app for any school/college/tuition/academies.</li>
+                <li>It is A-Z solution for school/college/tuition/academies.</li>
+                <li>This app has three types of flavours, one for institute Principal/Admin, second for institute Teacher and other for insititute Students and their parents.</li>
+                <li>Users can do number of things to make learning better beside taking live classes, attendance and sending assignments.</li>
+              </ul>
+            </div>
+            <div className="appcard2">
+            <a href=""><img src={andriod} alt="andriodicon" /></a>
+              <h3>Parvarish4U</h3>
+              <ul>
+                <li>It has complete information of various programs run by ParvarishForYou</li>
+                <li>Under knowledge center, it has list of books available at different centers, ebooks, notes etc</li>
+                <li>Academic parternship program details, Talent support program details ,Technical partnership program details Internship program details, Various articles by our expert team</li>
+                <li>Good videos by our expert team,Image gallery, donors list and Donate us section to support our good work.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  </>
+  )
+}
+
+export default Installapp
+import React from 'react'
+import { Link } from 'react-router-dom'
+import "./sliderimg.css"
+
+const News = () => {
+  const Scrollup =() =>{
+    window.scrollTo({top:0})
+  }
+  return (<>
+    <div className="maindiv">
+        <div className="newsHeading">
+            <h2>NEWS AND UPDATES</h2>
+        </div>
+        <div className="newsbox">
+            <div className="newsbox1">
+                <div className="topic">28th July 2019:- Book Donation Derive: R D Progressive School Wazirganj</div>
+                <div className="btnnewsData">
+            <Link onClick={Scrollup} className="nav-link active " to="/news1">Read More</Link>
+          </div>
+            </div>
+            <div className="newsbox1">
+                <div className="topic">4th May 2019:- Seminar On Sports: Health and Career.</div>
+                <div className="btnnewsData">
+            <Link onClick={Scrollup} className="nav-link active " to="/news2">Read More</Link>
+          </div>
+            </div>
+            <div className="newsbox1">
+                <div className="topic">UP Police - UP Police constable 49568 bharti 2018.</div>
+                <div className="btnnewsData">
+            <Link onClick={Scrollup} className="nav-link active " to="/news3">Read More</Link>
+          </div>
+            </div>
+            <div className="newsbox1">
+                <div className="topic">Navodalaya Vidyalaya - NVS entrance exam online application 2019.</div>
+                <div className="btnnewsData">
+            <Link onClick={Scrollup} className="nav-link active " to="/news4">Read More</Link>
+          </div>
+            </div>
+            </div>
+        </div>
+  </>
+  )
+}
+
+export default News
+import React from 'react'
+import "./sliderimg.css"
+import {PiPhoneCallFill} from 'react-icons/pi'
+import {MdEmail} from 'react-icons/md'
+import {IoIosTime} from 'react-icons/io'
+
+const Ourcontact = () => {
+  return (<>
+    
+    <div className="maindivc">
+        <div className="contactHeading">
+            <h1>Our Contact</h1>
+        </div>
+        <div className="contactbox">
+            <div className="contactbox1">
+                <div className="ctopic">
+                    <h3>All general queries:</h3>
+                    <p>Please contact or Whatsapp on our mobile nos</p>
+                </div>
+            </div>
+            <div className="contactbox1">
+                <div className="ctopic">
+                    <h3>Phone or Whatsapp:</h3>
+                    <p><PiPhoneCallFill/> +91-9719821103</p>
+                    <p><PiPhoneCallFill/> +91-9720821103</p>
+                </div>
+            </div>
+            <div className="contactbox1">
+                <div className="ctopic">
+                    <h3>Email Us</h3>
+                    <p><MdEmail/> parvarishforyou@gmail.com</p>
+                </div>
+          </div>
+            <div className="contactbox1">
+                <div className="ctopic">
+                    <h3>Working Hours:</h3>
+                    <p><IoIosTime/> Our working Hours are 9 am to 5 pm</p>
+                </div>
+            </div>
+            </div>
+        </div>
+  </>
+  )
+}
+
+export default Ourcontact
+import React from "react";
+import "./sliderimg.css"
+import { NavLink } from "react-router-dom";
+import pic1 from "../../assets/telantsupport.png"
+import pic2 from "../../assets/knowledgecenter.png"
+import pic3 from "../../assets/technical.png"
+
+
+
+const Ourprogram = () => {
+
+  const Scrollup =() =>{
+    window.scrollTo({top:0})
+  }
+
+  return (
+    <>
+      <div className="maindiv">
+        <div className="pHeading">
+          <h2>Our Program</h2>
+        </div>
+        <div className="pbox">
+          <div className="pbox1">
+            <div className="imgp">
+              <img src={pic1} />
+            </div>
+            <div className="Ptopic">
+            ParvarishForYou Talent Support Scheme 
+            </div>
+            <div className="Particle">
+            ParvarishForYou has started this scheme. Under this scheme we are supporting talent either in academics, sports and any other field of life. Under this scheme organization support students in different ways.
+            </div>
+            <div className="btnpData">
+              <NavLink onClick={Scrollup} className="nav-link active " to="/p1">
+                Read More
+              </NavLink>
+            </div>
+          </div>
+          <div className="pbox1">
+            <div className="imgp">
+              <img src={pic2} />
+            </div>
+            <div className="Ptopic">
+            ParvarishForYou Knowledge Center 
+            </div>
+            <div className="Particle">
+            Under this scheme we are in the process of establishing libraries at various remote locations where students in need of books. These libraries also accept books as donation.
+            </div>
+            <div className="btnpData">
+              <NavLink onClick={Scrollup} className="nav-link active " to="/p2">
+                Read More
+              </NavLink>
+            </div>
+          </div>
+          <div className="pbox1">
+            <div className="imgp">
+              <img src={pic3} />
+            </div>
+            <div className="Ptopic">
+            ParvarishForYou Technical Partnership Program
+            </div>
+            <div className="Particle">
+            Under this programme we are making parternership with the computer centres, shops which use to help students. We provide all kind of assistance to them with the help of our technical team.
+            </div>
+            <div className="btnpData">
+              <NavLink onClick={Scrollup} className="nav-link active " to="/p3">
+                Read More
+              </NavLink>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Ourprogram;
+import React from 'react'
+import "./sliderimg.css"
+import {NavLink} from 'react-router-dom'
+import pic4 from "../../assets/capacitybuilding.png"
+import pic5 from "../../assets/academicpartnership.png"
+import pic6 from "../../assets/intershipprogram.jpg"
+
+const Ourprogram2 = () => {
+
+  const Scrollup =() =>{
+    window.scrollTo({top:0})
+  }
+
+  return (
+    <>
+    <div className="maindiv">
+      <div className="pHeading">
+        <h2>Our Program</h2>
+      </div>
+      <div className="pbox">
+        <div className="pbox1">
+          <div className="imgp">
+            <img src={pic4} />
+          </div>
+          <div className="Ptopic">
+          ParvarishForYou Capacity Building Center
+          </div>
+          <div className="Particle">
+          Under this scheme we are establishing centres where sessions and classes can be arranged by expert to increase capacity of students. As most of problems of society can be solved with this.
+            </div>
+          <div className="btnpData">
+            <NavLink onClick={Scrollup} className="nav-link active " to="/p4">
+              Read More
+            </NavLink>
+          </div>
+        </div>
+        <div className="pbox1">
+          <div className="imgp">
+            <img src={pic5} />
+          </div>
+          <div className="Ptopic">
+          ParvarishForYou Academic Partnership Program
+          </div>
+          <div className="Particle">
+          This programme has been started with the vision reducing or eliminating gap of international level school and school which don't sufficient resources. Our team organises different activites and different sessions at school at different time.
+            </div>
+          <div className="btnpData">
+            <NavLink onClick={Scrollup} className="nav-link active " to="/p5">
+              Read More
+            </NavLink>
+          </div>
+        </div>
+        <div className="pbox1">
+          <div className="imgp">
+            <img src={pic6} />
+          </div>
+          <div className="Ptopic">
+          ParvarishForYou Internship Program
+          </div>
+          <div className="Particle">
+          ParvarishForYou has started this program to provide internship for freshers or students. Under this program individual will work under the guidance of our experienced team.chool at different time.
+            </div>
+          <div className="btnpData">
+            <NavLink onClick={Scrollup} className="nav-link active " to="/p6">
+              Read More
+            </NavLink>
+          </div>
+        </div>
+      </div>
+    </div>
+  </>
+  )
+}
+
+export default Ourprogram2
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+#root{
+    width: 100vw;
+    overflow-x: hidden;
+}
+.navbar-brand img{
+    width: 15vw;
+    height: 10vh;
+}
+.navbar-nav{
+    margin-right: 5vw;
+    font-size: 20px;
+}
+.navbar-nav li{
+    padding-right: 1rem;
+}
+.dropdown-menu:hover{
+    display: block;
+}
+.navbar-nav a:hover{
+    color: blue;
+}
+
+.imginfo{
+    width: 100vw;
+    height: 52vh;
+}
+.slide{
+    position: relative;
+}
+
+.maindata{
+    display: flex;
+    width: 88vw;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    align-items: center;
+}
+.div{
+    background-color: rgb(222, 222, 222);
+}
+.headingMainData{
+color: black;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 800;
+text-align: center;
+line-height: 50px; 
+}
+
+.headingMainData h2{
+    font-size: 56px;
+
+}
+.dataMainData{
+color: #515354;
+font-family: Open Sans;
+
+}
+.dataMainData p{
+margin-top: 15px;
+font-size: 43px;
+line-height: 55px; 
+font-weight: 500;
+text-align: justify;
+margin-bottom: 5%;
+}
+
+.btnMainData{
+display: inline;
+gap: 8px;
+border-radius: 50px;
+border: 2px solid black;
+background: transparent;
+width: 190px;
+}
+
+.a{
+color:#14242C;
+font-weight: 500;
+}
+.btnMainData :hover{
+    border: 2px solid black;
+    background: black;
+    color:  white;
+    border-radius: 50px;
+}
+.leftorange{
+    width: 10px;
+    background-color: orange;
+    height: 573px;
+    flex-shrink: 0;
+    justify-content: left;
+}
+.rightorange{
+    width: 10px;
+    height: 573px;
+    flex-shrink: 0;
+    background-color: orange;
+    justify-content: right;
+}
+.data{
+    display: flex;
+    margin-top: 35px;
+    
+}
+h1{
+    background-color: #0A2640;
+}
+.maindiv{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    margin-top: 70px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.navigate{
+    position: relative;
+    color: black;
+    display: flex;
+    justify-content: right ;
+}
+.lefright{
+    display: flex;
+    justify-content: right ;
+    margin-right: 2rem;
+}
+.navigate button{
+    font-size: 30px;
+    padding: 10px;
+    background: transparent;
+    border: none;
+}
+
+.newsHeading h2{
+color: black;
+font-family: Montserrat;
+font-size: 54px;
+font-style: normal;
+font-weight: 600;
+line-height: 50px;
+}
+
+.newsbox{
+    width: 90vw;
+    height: 80vh;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+}
+.newsbox1{
+width: 39vw;
+height: 25vh;
+flex-shrink: 0;
+background: #F3851D;
+box-shadow: 5px 5px black;
+}
+
+.topic{
+    display: flex;
+    width: 39vw;
+    height: 16vh;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.btnnewsData{
+border: 2px solid #FFF;
+background: #FEFEFE;
+display: block;
+gap: 8px;
+border-radius: 5px;
+width: 180px;
+margin-left: 35%;
+}
+
+.btnnewsData a{
+    color: #14242C;
+}
+.btnnewsData:hover{
+border: 2px solid #14242C;
+background: #14242C;
+}
+
+.nav-link:hover {
+    color: white;
+}
+
+.navigate{
+    margin-right: 18%;
+}
+
+
+
+/* Articles and Blogs */
+.blogarticle{
+    position: relative;
+    width: 100vw;
+    height: 75vh;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    background-color: #14242C;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.articles{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 75vh;
+    
+}
+.headingarticle{
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 54px;
+    font-style: normal;
+    font-weight: 400;
+}
+.headingarticle h2{
+    font-size: 3rem;
+}
+.imgarticle{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.imgarticle img{
+    width: 35vw;
+    height: 45vh;
+    }
+
+.blogbutton{
+    margin-top: -35px;
+    margin-bottom: 5px
+}
+
+.imgarticle button{
+    width: 40px;
+    border-radius: 100%;
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: #515354;
+    font-weight: 800;
+    color: white;
+    
+}
+.topicarticle{
+    width: 25vw;
+    height: 18vh;
+    background-color: #3B4858;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.topicarticle p{
+    font-size: 20px;
+    color:white;
+}
+
+.topicarticle a{
+    border: 2px solid #FFF;
+    background: #FEFEFE;
+    display: block;
+    gap: 8px;
+    border-radius: 5px;
+    width: 130px;
+    font-size: 17px;
+    color: black;
+    text-decoration: none;
+}
+.topicarticle a:hover{
+    background: rgb(0, 0, 0);
+    border: 2px solid black;
+    color: white;
+
+}
+
+.blogs{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 40vw;
+    height: 75vh;   
+}
+
+.pHeading{
+    color: #000000;
+    font-family: Montserrat;
+   
+}
+
+.pHeading h2{
+    font-size: 55px;
+    font-style: normal;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 5px black;
+}
+.pbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+.pbox img{
+    width: 30vw;
+    height: 25vh;
+}
+.imgp{
+    width: 30vw;
+    height: 25vh;
+}
+.imgp img{
+    border-radius: 15% 15% 0 0;
+}
+.Ptopic{
+    color: #212529cc;
+    font-size: 30px;
+    font-family: Montessarat;
+    font-weight: 600;
+    text-decoration: underline;
+    width: 29vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.Particle{
+    color: #14242C;
+    font-family: Montessarat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.75px;
+    text-align: justify;
+    width: 27vw;
+    margin-bottom: 10px;
+}
+.pbox1{
+    background: white;
+    border-radius: 15% 15% 10% 10%;
+    width:30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 57vh;
+    margin-right: 40px;
+}
+.btnpData{
+    display: flex;
+    justify-content: center;
+}
+.btnpData a{
+    border: 2px solid #000000;
+    background: #000000;
+    display: block;
+    gap: 8px;
+    border-radius: 5px;
+    width: 100px;
+    font-size: 12px;
+    color: rgb(253, 253, 253);
+    text-decoration: none;
+    margin-bottom: 10px;
+    position: absolute;
+  bottom: 0px;
+  
+
+}
+
+.btnpData a:hover{
+    border: 2px solid #010835a9;
+    background: #010835a9;
+    color: rgb(255, 255, 255);
+}
+.pmaindiv{
+    background-color: #F3851D;
+    padding: 2rem;
+}
+.navigatediv{
+    background-color: #F3851D;
+}
+
+.installappbox{
+    background-color: #F3851D;
+}
+.ourcontact{
+    background-color: #0A2640;
+}
+.maindivc{
+    display: flex;
+    background-color: #0A2640;
+    width: 100vw;
+    flex-direction: column;
+    color: white;
+    margin-top: 70px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.contactbox{
+    width: 100vw;
+    height: 40vh;
+    flex-shrink: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 50px;
+    align-items: center;
+}
+.contactbox1{
+width: 35vw;
+height: 15vh;
+flex-shrink: 0;
+background-color: #0A2640;
+}
+
+.ctopic{
+    display: flex;
+    width: 509px;
+    height: 110px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+    /*  enhancements */
+    .enhanceheading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 34px;
+    }
+    
+    .enhanceheading h2{
+        color: #000000;
+        font-family: Montserrat;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 800;
+    }
+    .enhanceheading p{
+        font-size: 18px;
+        color: #0A2640;
+        font-weight: 500;
+    }
+    .enhanceimgtxt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 80vh;
+
+    }
+    .enhanceimg img{
+        width: 40vw;
+        height: 75vh;
+    }
+    .enhancetxt{
+        margin-left: 45px;
+    }
+    .enhancetxt ol{
+        width: 30vw;
+    }
+    .enhancetxt li{
+        font-size: 30px;
+        color: #0A2640;
+        font-weight: 500;
+    }
+    .enhancetxt  p{
+        font-size: 25px;
+    }
+    .installappbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    }
+    .installapp{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .appheading h2{
+        color: #ffffff;
+        font-family: Montserrat;
+        font-size: 55px;
+        font-style: normal;
+        font-weight: 800;
+        text-shadow: 2px 4px black;
+    }
+    .appcards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 85px;
+    }
+    .appcard1{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 35vw;
+    border-radius: 50px;
+    height: 44vh;
+    margin-right: 80px;
+    box-shadow: 10px 10px black;
+    }
+    .appcard1 img{
+        width: 350px;
+    height: 200px;
+    margin-top: -100px;
+    }
+    .appcard1 a{
+        height: 13vh;
+    }
+    .appcard1 h3{
+        color: #0A2640;
+        font-family: Montserrat;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 500;
+    }
+    .appcard1 ul{
+        color: #000;
+        font-family: Montserrat;
+        font-size: 20px;
+        line-height: 20px; 
+        letter-spacing: 0.1px;
+        text-align: left;
+        width: 35vw;
+    }
+    .appcard2{
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 35vw;
+    border-radius: 50px;
+    margin-left: 40px;
+    height: 44vh;
+    box-shadow: 10px 10px black;
+    }
+        .appcard2 img{
+            width: 180px;
+            height: 130px;
+            margin-top: -39px;
+        }
+        .appcard2 h3{
+            color: #0A2640;
+            font-family: Montserrat;
+            font-size: 35px;
+            font-style: normal;
+            font-weight: 500;
+        }
+        .appcard2 a{
+            height: 13vh;
+        }
+        .appcard2 ul{
+            color: #000;
+            font-family: Montserrat;
+            font-size: 20px;
+            line-height: 20px; 
+            letter-spacing: 0.1px;
+            text-align: left;
+            width: 35vw;
+        }
+
+        .maindivc{
+            margin-top: 0px;
+            background-color: #14242C;
+        }
+        .contactHeading h1{
+            color: #FFF;
+            font-family: Montserrat;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 800;
+            background-color: #14242C;
+            text-transform: uppercase;
+        }
+        .ctopic{
+            line-height: 25px;
+            text-align: left;
+            font-weight: 200;
+        }
+        .contactbox1{ 
+            background-color:#14242C ;
+        }
+        .ctopic h3{
+            font-size: 25px;
+        }
+        .ctopic p{
+            font-size: 20px;
+        }
+        .ourcontact{
+            display: flex;
+            justify-content: center;
+        }
+        .contactHeading{
+            margin-top: 20px;
+        }
+
+        @media (min-width: 320px)
+        and (max-width:480px){
+            #root{
+                overflow-x: hidden;
+            }
+            .imginfo{
+                width:100vw;
+                height: 42vh;
+            }
+            .headingMainData h2{
+                font-size: 35px;
+            }
+            .newsHeading h2{
+                font-size: 25px;
+            }
+            .newsbox{
+                margin-left: 39%;
+                margin-right: 41%;
+                width: 100vw;
+                height: 75vh;
+                margin-top: 0px;
+            }
+            .newsbox1{
+                width: 95vw;
+                height: 17vh;
+            }
+            .topic{
+                width: 95vw;
+                height: 12vh;
+                font-weight: 300;
+                line-height: 20px;
+                font-size: 13px;
+            }
+            .data{
+                width: 100vw;
+                margin-bottom: 10vh;
+            }
+            .leftorange{
+                width: 4px;
+                height: 350px;
+            }
+            .rightorange{
+                width: 4px;
+                height: 350px;
+            }
+            .dataMainData p{
+                line-height: 25px;
+                font-size: 16px;
+                text-align: justify;
+            }
+            .maindata{
+                margin-top: 0px;
+                margin-left: 4vw;
+                margin-right: 4vw;
+            }
+            .btnMainData{
+                width: 130px;
+            }
+            .btnMainData .a{
+                    font-size: 12px;
+            }
+            .btnnewsData{
+                width:120px;
+                margin-left: 34%;
+            }
+            .btnnewsData a{
+                font-size: 10px;
+            }
+        
+            .imgarticle img{
+            width: 90vw;
+            height: 30vh;
+            }
+            .topicarticle p {
+                font-size: 15px;
+            }
+            .topicarticle{
+                width: 75vw;
+                height: 16vh;
+            }
+            .articles{
+                height: 60vh;
+                width: 75vw;
+            }
+        
+            .blogs{
+                height: 60vh;
+                width: 75vw;
+            }
+            .blogarticle{
+                height: 125vh;
+            }
+            .pHeading h2{
+                font-size: 35px;
+            }
+            .maindiv{
+                margin-top: 0px;
+            }
+            .pmaindiv{
+                display: flex;
+                justify-content: center;
+            }
+            .pbox1{
+                margin-right: 0px;
+                margin-bottom: 20px;
+                width: 85vw;
+                height: 59vh;
+            }
+            .imgp{
+                width: 85vw;
+                height: 25vh;
+            }
+            .pbox img{
+                width: 85vw;
+                height: 25vh;
+            }
+            .Ptopic{
+                font-size: 18px;
+                width: 80vw;
+            }
+            .Particle{
+                font-size: 16px;
+                line-height: 18px;
+                width: 70vw;
+            }
+            .btnpData a{
+                position: relative;
+            }
+    .enhanceheading h2{
+        font-size: 24px;
+    }
+    .enhanceheading p {
+        font-size: 15px;
+    }
+    .enhanceimgtxt{
+        flex-direction: column;
+        height: 95vh;
+        margin-top: 0px;
+    }
+    .enhanceimg img{
+    width: 90vw;
+    height: 40vh;
+    }
+    .enhancetxt{
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .enhancetxt li{
+        font-size: 25px;
+    }
+    .enhancetxt p{
+        font-size: 20px;
+    }
+    .enhancetxt ol{
+        width: 92vw;
+    }
+    .appheading h2{
+        font-size: 22px;
+        margin-top: 25px;
+    }
+    .appcards{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .appcard1{
+        width: 80vw;
+        margin-right: 0px;
+        margin-bottom: 50px;
+    }
+    .appcard1 a{
+        height: 10vh;
+    }
+    .appcard1 img{
+        width: 253px;
+    height: 173px;
+    margin-top: -89px;
+    }
+    .appcard1 h3{
+        font-size: 25px;
+    }
+    .appcard1 ul{
+        font-size: 12px;
+        width: 70vw;
+        line-height: 15px;
+    }
+    .appcard2{
+        width: 80vw;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .appcard2 a{
+        height: 10vh;
+    }
+    .appcard2 img{
+        width: 134px;
+        height: 109px;
+        margin-top: -33px;
+    }
+    .appcard2 h3{
+        font-size: 25px;
+    }
+    .appcard2 ul{
+        font-size: 12px;
+        width: 70vw;
+        line-height: 15px;
+    }
+    .installappbox{
+        height: 120vh;
+    }
+    .contactHeading h1{
+        font-size: 30px;
+    }
+
+    .contactbox{
+        width: 55vw;
+        height: 50vh;
+        margin-left:-170px ;
+        margin-top: 0px;
+    }
+    .ctopic{
+        line-height: 10px;
+    }
+    .ctopic h3{
+        font-size: 15px;
+    }
+    .ctopic p {
+        font-size: 12px;
+    }
+    .contactbox1{
+        height: 10vh;
+    }
+}
+
+@media (min-width: 480px)
+and (max-width:768px){
+    #root{
+        overflow-x: hidden;
+    }
+.imginfo{
+    width: 100vw;
+}
+.headingMainData h2{
+    font-size: 40px;
+}
+.dataMainData p{
+    font-size: 25px;
+    line-height: 30px;
+    width: 85vw;
+}
+.maindata{
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100vw;
+}
+
+.newsHeading h2{
+    font-size: 30px;
+}
+.newsbox{
+    width:100vw;
+    height: 90vh;
+    margin-top: 0px;
+}
+.newsbox1{
+    width: 92vw;
+    height: 21vh;
+}
+.topic{
+    font-size:20px;
+    width: 92vw;
+    height: 14vh;
+}
+.pmaindiv {
+    display: flex;
+    justify-content: center;
+}
+.maindiv{
+    width: 100vw;
+    margin-top: 0px;
+}
+.navigate{
+    justify-content: flex-end;
+    margin-right: -35%;
+}
+
+.btnnewsData{
+    width: 135px;
+}
+.btnnewsData a{
+    font-size: 12px;
+}
+    .imgarticle{
+        width: 70vw;
+    }
+    .imgarticle img{
+        width: 70vw;
+        height: 30vh;
+    }
+    .topicarticle p {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+    .topicarticle{
+        width: 55vw;
+        height: 15vh;
+    }
+    .topicarticle a{
+        margin-bottom: 20px;
+    }
+    .articles{
+        height: 35vh;
+        width: 70vw;
+    }
+    .blogs{
+        height: 35vh;
+        width: 70vw;
+    }
+    .blogarticle{
+        height: 115vh;
+    }
+    .pHeading h2{
+        font-size: 35px;
+    }
+    .pbox1{
+        margin-right: 35px;
+        margin-bottom: 20px;
+        margin-left: 50px;
+        width: 75vw;
+        height: 55vh;
+    }
+    .imgp{
+        width: 75vw;
+    }
+    .imgp img{
+        width: 75vw;
+    }
+    .Ptopic{
+        font-size: 18px;
+        width: 75vw;
+    }
+    .Particle{
+        font-size: 15px;
+        line-height: 15px;
+        width: 65vw;
+        margin-bottom: 50px;
+    }
+    .navigate{
+        margin-right: 0px;
+    }
+    .btnpData a{
+        position: relative;
+    }
+
+    .enhanceheading h2{
+        font-size: 35px;
+    }
+    .enhanceheading p {
+         font-size: 18px;
+    }
+    .enhanceimgtxt{
+        flex-direction: column;
+        height: 105vh;
+        margin-top: 10px;
+    }
+    .enhanceimg img{
+        width: 90vw;
+        height: 60vh;
+    }
+    .enhancetxt{
+        margin-left: 0px;
+        margin-top: 15px;
+    }
+    .enhancetxt ol{
+        width: 85vw;
+    }
+    .enhancetxt ol li {
+        font-size: 25px;
+    }
+    .enhancetxt p{
+        font-size: 20px;
+    }
+    .appheading h2{
+        font-size: 30px;
+    }
+    .installappbox{
+        height: 135vh;
+    }
+    .appcards{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .appcard1{
+        width: 80vw;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        height: 53vh;
+    }
+    .appcard1 a{
+        height: 10vh;
+    }
+    .appcard1 img{
+        width: 253px;
+        height: 173px;
+        margin-top: -89px;
+    }
+    .appcard1 h3{
+        font-size: 28px;
+    }
+    .appcard1 ul{
+        font-size: 17px;
+        width: 75vw;
+        line-height: 21px;
+    }
+    .appcard2{
+        width: 80vw;
+        margin-right: 0px;
+        margin-bottom: 50px;
+        height: 53vh;
+        margin-left: 0px;
+    }
+    .appcard2 a{
+        height: 10vh;
+    }
+    .appcard2 img{
+        width: 160px;
+        height: 115px;
+        margin-top: -35px;
+    }
+    .appcard2 h3{
+        font-size: 28px;
+    }
+    .appcard2 ul{
+        font-size: 17px;
+        width: 75vw;
+        line-height: 21px;
+    }
+    .contactHeading h1{
+        font-size: 35px;
+    }
+    .contactbox{
+        width: 100vw;
+        height: 50vh;
+        margin-left:0px;
+        margin-top: 0px;
+    }
+    .ctopic{
+        line-height: 10px;
+    }
+    .ctopic h3{
+        font-size: 20px;
+    }
+    .ctopic p {
+        font-size: 15px;
+    }
+    .contactbox1{
+        height: 10vh;
+        width: 85vw;
+    }
+    
+}
+
+@media (min-width: 768px)
+    and (max-width:1024px){
+        #root{
+            overflow-x: hidden;
+        }
+    .imginfo{
+        width: 100vw;
+        height: 40vh;
+    }
+    .headingMainData h2{
+        font-size: 55px;
+    }
+    .dataMainData p{
+        font-size: 30px;
+        line-height: 37px;
+        width: 90vw;
+    }
+    .maindata{
+        margin-left: 2%;
+        margin-right: 2%;
+        width: 100vw;
+    }
+    
+    .newsHeading h2{
+        font-size: 40px;
+    }
+    .newsbox{
+        width:100vw;
+        height: 95vh;
+        margin-top: 0px;
+    }
+    .newsbox1{
+        width: 90vw;
+        height: 22vh;
+    }
+    .topic{
+        font-size:25px;
+        width: 90vw;
+    }
+    .maindiv{
+        width: 100vw;
+        margin-top: 0px;
+    }
+    .navigate{
+        justify-content: flex-end;
+        margin-right: -35%;
+    }
+    
+    .btnnewsData{
+        width: 135px;
+        margin-left: 41%;
+    }
+    .btnnewsData a{
+        font-size: 12px;
+    }
+        .imgarticle img{
+            width: 40vw;
+            height: 35vh;
+        }
+        .topicarticle p {
+            font-size: 15px;
+        }
+        .topicarticle{
+            width: 30vw;
+            height: 14vh;
+        }
+        .articles{
+            height: 65vh;
+            width: 45vw;
+        }
+        .blogs{
+            height: 65vh;
+            width: 45vw;
+        }
+        .pHeading h2{
+            font-size: 45px;
+        }
+        .pbox1{
+            height: 65vh;
+            margin-bottom: 20px;
+            width: 28vw;
+        }
+        .imgp{
+            width: 28vw;
+            height: 25vh;
+        }
+        .pbox img{
+            width: 28vw;
+            height: 25vh;
+        }
+        .Ptopic{
+            width: 27vw;
+            font-size: 20px;
+        }
+        .Particle{
+            font-size: 15px;
+            width: 25vw;
+        }
+        .btnpData a{
+            bottom: 17px;
+        }
+        .maindiv{
+            margin-top: 20px;
+        }
+        .navigate{
+            margin-right: 210px;
+        }
+        .enhanceimgtxt{
+            flex-direction: column;
+            height: 120vh;
+        }
+        .enhanceheading h2{
+            font-size: 50px;
+        }
+        .enhancetxt{
+            margin-left: 0px;
+            margin-top: 15px;
+        }
+        .enhancetxt ol{
+            width: 80vw;
+        }
+        .enhanceimg img{
+            width: 80vw;
+            height: 75vh;
+        }
+        .enhanceheading p {
+            font-size: 20px;
+       }
+       .appheading h2{
+        font-size: 45px;
+    }
+    .appcard1{
+        width: 40vw;
+        margin-right: 50px;
+        height: 50vh;
+    }
+    .appcard1 ul{
+        font-size: 13px;
+        width: 40vw;
+    }
+    .appcard1 h3{
+        font-size: 30px;
+    }
+    .appcard2{
+        width: 40vw;
+        height: 50vh;
+    }
+    .appcard2 ul{
+        font-size: 13px;
+        width: 40vw;
+    }
+    .appcard2 h3{
+        font-size: 30px;
+    }
+    .contactHeading h1{
+        font-size: 35px;
+    }
+    .contactbox{
+        width: 100vw;
+        height: 50vh;
+        margin-top: 0px;
+    }
+    .ctopic{
+        line-height: 10px;
+        width: 40vw;
+    }
+    .ctopic h3{
+        font-size: 20px;
+    }
+    .ctopic p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .contactbox1{
+        height: 10vh;
+        width: 35vw;
+    }
+    }
+    @media (min-width: 1024px)
+    and (max-width:1200px){
+        #root{
+            overflow-x: hidden;
+        }
+        .imginfo{
+            height: 55vh;
+        }  
+         .maindata{
+            margin-bottom: 15vh;
+         }
+        .maindiv{
+            margin-top: 0px;
+        }
+        .newsbox{
+            width: 100vw;
+            margin-top: 0px;
+        }
+        .newsbox1{
+            width: 48vw;
+        }
+        .topic{
+            width: 48vw;
+            font-size: 25px;
+        }
+        .blogarticle{
+            height: 80vh;
+        }
+        .articles{
+            width: 50vw;
+        }
+        .blogs{
+            width: 50vw;
+        }
+        .imgarticle img{
+            width: 45vw;
+            height: 45vh;
+        }
+        .pbox1{
+            margin-right: 40px;
+            width: 29vw;
+            height: 65vh;
+        }
+        .imgp{
+            width: 29vw;
+        }
+        .imgp img{
+            width: 29vw;
+        }
+        .Ptopic{
+            width: 28vw;
+            font-size: 22px;
+        }
+        .Particle{
+            width: 25vw;
+        }
+        .enhanceheading p{
+            font-size: 22px;
+        }
+        .enhanceimg img{
+            width: 60vw;
+        }
+        .appcard1{
+            width: 45vw;
+            height: 55vh;
+            margin-right: 20px;
+        }
+        .appcard2{
+            width: 45vw;
+            height: 55vh;
+        }
+        .appcard1 ul{
+            width: 45vw;
+        }
+        .appcard2 ul{
+            width: 45vw;
+        }
+    }
+
+    @media (min-width: 1200px)
+    and (max-width:1400px){
+        #root{
+            overflow-x: hidden;
+        }
+        .maindiv{
+            margin-top: 0px;
+        }
+        .maindata{
+            margin-bottom: 15vh;
+        }
+        .dataMainData p{
+            font-size: 30px ;
+        }
+        .newsbox{
+            margin-top: 0px;
+            width: 98vw;
+        }
+        .newsbox1{
+            width: 48vw;
+        }
+        .topic{
+            width: 48vw;
+        }
+        .blogarticle{
+            height: 80vh;
+        }
+        .articles{
+            width: 45vw;
+        }
+        .blogs{
+            width: 45vw;
+        }
+        .imgarticle img{
+            width: 40vw;
+        }
+        .pbox1{
+            margin-right: 30px;
+            width: 30vw;
+            height: 68vh;
+        }
+        .imgp{
+            width: 30vw;
+        }
+        .imgp img{
+            width: 30vw;
+        }
+        .Ptopic{
+            width: 30vw;
+            font-size: 28px;
+        }
+        .Particle{
+            width: 28vw;
+        }
+        .enhanceheading p {
+            font-size: 22px;
+        }
+        .enhanceimg img{
+            width: 60vw;
+        }
+        .appcard1{
+            width: 45vw;
+            margin-right: 20px;
+            height: 55vh;
+        }
+        .installappbox{
+            height: 90vh;
+        }
+        .appcard2{
+            width: 45vw;
+            height: 55vh;
+        }
+        .appcard1 ul{
+            width: 45vw;
+        }
+        .appcard2 ul{
+            width: 45vw;
+        }
+    }
+    @media (min-width: 1400px)
+    and (max-width:1600px){
+        #root{
+            overflow-x: hidden;
+        }
+        .maindata{
+            margin-bottom: 15vh;
+        }
+        .newsbox{
+            width: 98vw;
+        }
+        .newsbox1{
+            width: 47vw;
+        }
+        .topic{
+            width: 47vw;
+        }
+        .articles{
+            width: 45vw;
+        }
+        .blogs{
+            width: 45vw;
+        }
+        .imgarticle img{
+            width: 40vw;
+        }
+        .pbox1{
+            width: 30vw;
+            height: 60vh;
+        }
+        .imgp{
+            width: 30vw;
+        }
+        .imgp img{
+            width: 30vw;
+        }
+        .Ptopic{
+            width: 29vw;
+        }
+        .Particle{
+            width: 26vw;
+        }
+        .appcard1{
+            height: 50vh;
+        }
+        .appcard2{
+            height: 50vh;
+        }
+
+    }
