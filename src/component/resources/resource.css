@@ -1,0 +1,111 @@
+.articlebox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 135vh;
+    flex-wrap: wrap;
+    }
+    
+      .articlebox1{  
+        display: flex;
+        width: 50vw;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: 20vh;
+        flex-shrink: 0;
+        background: #d1d1d1;
+        box-shadow: 5px 5px #9b9b9b;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 12px;
+        transition: transform .2sec;
+      }
+      .articlebox1:hover{
+        transform: scale(1.1);
+      }
+      .btnaData{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: -30px;
+    }
+    .btnaData a{
+        border: 2px solid #000000;
+        background: #000000;
+        display: block;
+        gap: 8px;
+        padding: 5px;
+        border-radius: 5px;
+        width: 100px;
+        font-size: 13px;
+        color: rgb(253, 253, 253);
+        text-decoration: none;
+        margin-bottom: 10px;
+        bottom: 0px;
+    }
+      .topica{
+        font-weight: 500;
+        font-size: 20px;
+        width: 45vw;
+        margin-bottom: 10px;
+      }
+      .siz{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 12vw;
+        margin-right: 5vw;
+        width: 75vw;
+        height: 85vh;
+        margin-bottom: 2vh;
+      }
+    
+      .articleboxNewss{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+      }
+    
+      @media (min-width: 320px)
+      and (max-width:480px){
+        .siz{
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: 90vw;
+        height: 30vh;
+        }
+      }
+    
+      @media (min-width: 480px)
+    and (max-width:768px){
+     .siz{
+      margin-left: 5vw;
+        margin-right: 5vw;
+        width: 90vw;
+        height: 50vh;
+     }
+    }
+    
+    @media (min-width: 768px)
+        and (max-width:1024px){
+          .siz{
+        margin-left: 2vw;
+        margin-right: 2vw;
+        width: 95vw;
+        height: 85vh;
+          }
+        }
+        @media (min-width: 1024px)
+        and (max-width:1200px){
+    
+         .siz{
+        margin-left: 2vw;
+        margin-right: 2vw;
+        width: 95vw;
+        height: 80vh;
+          }
+        } 
